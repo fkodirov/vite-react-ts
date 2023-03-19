@@ -10,6 +10,14 @@ interface Props {
     image: string;
   };
 }
+export type car = {
+  brand: string;
+  model: string;
+  year: number;
+  color: string;
+  price: number;
+  image: string;
+};
 
 const Card: React.FC<Props> = ({ car }) => {
   return (
