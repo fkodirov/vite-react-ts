@@ -1,7 +1,10 @@
+@import url('css/header.css');
+@import url('css/card.css');
+@import url('css/search.css');
+
 #root {
-  max-width: 1280px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
