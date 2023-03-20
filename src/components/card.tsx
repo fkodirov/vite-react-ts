@@ -1,23 +1,5 @@
 import React from 'react';
-
-interface Props {
-  car: {
-    brand: string;
-    model: string;
-    year: number;
-    color: string;
-    price: number;
-    image: string;
-  };
-}
-export type car = {
-  brand: string;
-  model: string;
-  year: number;
-  color: string;
-  price: number;
-  image: string;
-};
+import { Props } from '../types/types';
 
 const Card: React.FC<Props> = ({ car }) => {
   return (

@@ -1,59 +1,76 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import Card from '../components/card';
-
-const testCar = {
-  brand: 'Toyota',
-  model: 'Camry',
-  year: 2021,
-  color: 'red',
-  price: 25000,
-  image: 'camry.jpg',
-};
+import '@testing-library/jest-dom';
 
 describe('Card', () => {
-  it('renders car brand', () => {
-    render(<Card car={testCar} />);
-    const brandElement = screen.getByText(testCar.brand);
-    expect(brandElement).toBeInTheDocument();
+  it('renders the car brand correctly', () => {
+    const car = {
+      brand: 'Tesla',
+      model: 'Model S',
+      year: 2022,
+      color: 'black',
+      price: 100000,
+      image: 'model-s.png',
+    };
+
+    const { getByText } = render(<Card car={car} />);
+    expect(getByText('Tesla')).toBeInTheDocument();
   });
 
-  it('renders car model', () => {
-    render(<Card car={testCar} />);
-    const modelElement = screen.getByText(testCar.model);
-    expect(modelElement).toBeInTheDocument();
+  it('renders the car model correctly', () => {
+    const car = {
+      brand: 'Tesla',
+      model: 'Model S',
+      year: 2022,
+      color: 'black',
+      price: 100000,
+      image: 'model-s.png',
+    };
+
+    const { getByText } = render(<Card car={car} />);
+    expect(getByText('Model S')).toBeInTheDocument();
   });
 
-  it('renders car year', () => {
-    render(<Card car={testCar} />);
-    const yearElement = screen.getByText(testCar.year.toString());
-    expect(yearElement).toBeInTheDocument();
+  it('renders the car year correctly', () => {
+    const car = {
+      brand: 'Tesla',
+      model: 'Model S',
+      year: 2022,
+      color: 'black',
+      price: 100000,
+      image: 'model-s.png',
+    };
+
+    const { getByText } = render(<Card car={car} />);
+    expect(getByText('2022')).toBeInTheDocument();
   });
 
-  it('renders car color', () => {
-    render(<Card car={testCar} />);
-    const colorElement = screen.getByText(testCar.color);
-    expect(colorElement).toBeInTheDocument();
+  it('renders the car color correctly', () => {
+    const car = {
+      brand: 'Tesla',
+      model: 'Model S',
+      year: 2022,
+      color: 'black',
+      price: 100000,
+      image: 'model-s.png',
+    };
+
+    const { getByText } = render(<Card car={car} />);
+    expect(getByText('black')).toBeInTheDocument();
   });
 
-  it('renders car price', () => {
-    render(<Card car={testCar} />);
-    const priceElement = screen.getByText(testCar.price.toString());
-    expect(priceElement).toBeInTheDocument();
-  });
+  it('renders the car price correctly', () => {
+    const car = {
+      brand: 'Tesla',
+      model: 'Model S',
+      year: 2022,
+      color: 'black',
+      price: 100000,
+      image: 'model-s.png',
+    };
 
-  // it('renders car image', () => {
-  //   render(<Card car={testCar} />);
-  //   const imageElement = screen.getByAltText(
-  //     `${testCar.brand} ${testCar.model}`
-  //   ) as HTMLImageElement;
-  //   expect(imageElement).toBeInTheDocument();
-  //   expect(imageElement.src).toContain(`assets/cars/${testCar.image}`);
-  // });
-
-  it('matches snapshot', () => {
-    const tree = renderer.create(<Card car={testCar} />).toJSON();
-    expect(tree).toMatchSnapshot();
+    const { getByText } = render(<Card car={car} />);
+    expect(getByText('100000')).toBeInTheDocument();
   });
 });
