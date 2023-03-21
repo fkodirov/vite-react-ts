@@ -13,7 +13,8 @@
     "format:check": "npm run format -- --list-different",
     "prebuild": "npm run lint:check && npm run format:check",
     "prestart": "npm run lint:check && npm run format:check",
-    "test": "jest --env=jsdom"
+    "test": "jest --env=jsdom",
+    "test:coverage": "jest --env=jsdom --coverage"
   },
   "dependencies": {
     "eslint-import-resolver-typescript": "^3.5.3",
