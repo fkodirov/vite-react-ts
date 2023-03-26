@@ -2,13 +2,13 @@ import React from 'react';
 
 interface NewCardProps {
   data: {
-    input: string;
-    date: string;
-    select: string;
+    input: string | undefined;
+    date: string | undefined;
+    select: string | undefined;
     checkbox1: boolean | undefined;
     checkbox2: boolean | undefined;
     radio: string;
-    image: File | null;
+    image: File | undefined;
   };
 }
 

@@ -10,6 +10,7 @@ class FormsPage extends Component {
 
   handleSubmit = (formData: FormData): void => {
     const { cardData } = this.state;
+    console.log(cardData);
     this.setState({
       cardData: [...cardData, formData],
       showHeader: true,

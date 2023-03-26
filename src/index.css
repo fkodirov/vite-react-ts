@@ -87,16 +87,14 @@ form {
   color: #fff;
 } */
 
-.switcher input[type="radio"] {
+.switcher input[type='radio'] {
   display: none;
 }
 
-.switcher input[type="radio"]:checked + label {
+.switcher input[type='radio']:checked + label {
   background-color: #00bfff;
   color: #fff;
 }
-
-
 
 @media (prefers-color-scheme: light) {
   :root {
