@@ -53,6 +53,50 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.switcher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.switcher label {
+  display: block;
+  width: 50%;
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #777;
+  cursor: pointer;
+}
+
+/* .switcher label:first-of-type {
+  background-color: #00bfff;
+  color: #fff;
+} */
+
+.switcher input[type="radio"] {
+  display: none;
+}
+
+.switcher input[type="radio"]:checked + label {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
