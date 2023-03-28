@@ -1,10 +1,10 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import { MainPage } from './pages/mainPage';
-import { AboutPage } from './pages/abouPaget';
-import { Notfound } from './pages/notFoundPage';
-import { FormsPage } from './pages/formsPages';
+import { MainPage } from './pages/MainPage';
+import { AboutPage } from './pages/AboutPage';
+import { NotFound } from './pages/NotFoundPage';
+import { FormsPage } from './pages/FormPage';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/forms" element={<FormsPage />} />
-        <Route path="*" element={<Notfound />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );

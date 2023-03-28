@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import Card from '../components/card';
+import Card from '../components/Card';
 import '@testing-library/jest-dom';
 
 describe('Card', () => {

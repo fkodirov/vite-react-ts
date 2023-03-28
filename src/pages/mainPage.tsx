@@ -1,10 +1,10 @@
 import React from 'react';
-import SearchBar from '../components/searchBar';
+import SearchBar from '../components/SearchBar';
 import data from '../data.json';
-import Card from '../components/card';
+import Card from '../components/Card';
 
 interface State {
-  searchResults: typeof data; // Указываем тип для searchResults
+  searchResults: typeof data;
 }
 
 class MainPage extends React.Component<object, State> {
@@ -16,13 +16,11 @@ class MainPage extends React.Component<object, State> {
   }
 
   handleSearch = (query: string) => {
-    // Фильтруем данные в соответствии с поисковым запросом
     const filteredData = data.filter((car) => {
       const searchValue = `${car.brand} ${car.model} ${car.year} ${car.color}`.toLowerCase();
       return searchValue.includes(query.toLowerCase());
     });
 
-    // Обновляем результаты поиска в состоянии компонента
     this.setState({
       searchResults: filteredData,
     });

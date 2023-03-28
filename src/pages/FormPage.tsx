@@ -1,6 +1,6 @@
 import { Component } from 'react';
-import UncontrolledComponent from '../components/form';
-import NewCard from '../components/newcard';
+import UncontrolledComponent from '../components/Form';
+import NewCard from '../components/NewCard';
 
 class FormsPage extends Component {
   state = {
