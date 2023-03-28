@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import UncontrolledComponent from '../components/form';
 import NewCard from '../components/newcard';
 
@@ -10,7 +10,6 @@ class FormsPage extends Component {
 
   handleSubmit = (formData: FormData): void => {
     const { cardData } = this.state;
-    console.log(cardData);
     this.setState({
       cardData: [...cardData, formData],
       showHeader: true,
@@ -22,7 +21,7 @@ class FormsPage extends Component {
     return (
       <div>
         <UncontrolledComponent onSubmit={this.handleSubmit} />
-        <div className="myClass">
+        <div className="new-cards">
           {cardData.map((data, index) => (
             <NewCard key={index} data={data} />
           ))}
