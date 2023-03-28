@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react';
+import React from 'react';
 interface Props {
   onSubmit: (formData: FormData) => void;
 }
@@ -77,13 +77,22 @@ class UncontrolledComponent extends React.Component<Props> {
       }
     }
 
-    if (valid == 0) this.props.onSubmit(formData);
-    else alert('Пожалуйста, заполните поля помеченные красным.');
+    if (valid == 0) {
+      this.props.onSubmit(formData);
+      event.currentTarget.reset();
+      this.setState({
+        inputFilled: true,
+        dateInputFilled: true,
+        selectFilled: true,
+        checkbox1Filled: true,
+        checkbox2Filled: true,
+        onRadioFilled: true,
+        offRadioFilled: true,
+        imageFilled: true,
+      });
+    } else alert('Пожалуйста, заполните поля помеченные красным.');
   };
-  handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    const inputFilled = event.target.value;
-    this.setState({ inputFilled });
-  };
+
   render() {
     const {
       inputFilled,
