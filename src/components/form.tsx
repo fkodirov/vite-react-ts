@@ -1,30 +1,21 @@
-import React from 'react';
+import React, { Component, createRef } from 'react';
+import { StateForm } from '../types/types';
+
 interface Props {
   onSubmit: (formData: FormData) => void;
 }
-
-interface State {
-  inputFilled: boolean;
-  dateInputFilled: boolean;
-  selectFilled: boolean;
-  checkbox1Filled: boolean;
-  checkbox2Filled: boolean;
-  onRadioFilled: boolean;
-  offRadioFilled: boolean;
-  imageFilled: boolean;
-}
 let valid: number;
-class UncontrolledComponent extends React.Component<Props> {
-  inputRef = React.createRef<HTMLInputElement>();
-  dateInputRef = React.createRef<HTMLInputElement>();
-  selectRef = React.createRef<HTMLSelectElement>();
-  checkbox1Ref = React.createRef<HTMLInputElement>();
-  checkbox2Ref = React.createRef<HTMLInputElement>();
-  onRadioRef = React.createRef<HTMLInputElement>();
-  offRadioRef = React.createRef<HTMLInputElement>();
-  imageRef = React.createRef<HTMLInputElement>();
+class UncontrolledComponent extends Component<Props> {
+  inputRef = createRef<HTMLInputElement>();
+  dateInputRef = createRef<HTMLInputElement>();
+  selectRef = createRef<HTMLSelectElement>();
+  checkbox1Ref = createRef<HTMLInputElement>();
+  checkbox2Ref = createRef<HTMLInputElement>();
+  onRadioRef = createRef<HTMLInputElement>();
+  offRadioRef = createRef<HTMLInputElement>();
+  imageRef = createRef<HTMLInputElement>();
 
-  state: State = {
+  state: StateForm = {
     inputFilled: true,
     dateInputFilled: true,
     selectFilled: true,
@@ -109,17 +100,17 @@ class UncontrolledComponent extends React.Component<Props> {
           <label htmlFor="textinput" style={{ color: inputFilled ? 'inherit' : 'red' }}>
             Название:
           </label>
-          <input type="text" ref={this.inputRef} name="textinput" />
+          <input type="text" ref={this.inputRef} id="textinput" name="textinput" />
         </div>
         <div>
           <label htmlFor="date-input" style={{ color: dateInputFilled ? 'inherit' : 'red' }}>
             Дата выпуска:
           </label>
-          <input type="date" ref={this.dateInputRef} name="date-input" />
+          <input type="date" ref={this.dateInputRef} id="date-input" name="date-input" />
         </div>
         <div>
-          Цвет:
-          <select ref={this.selectRef} name="color-selection">
+          <label htmlFor="color-selection">Цвет:</label>
+          <select ref={this.selectRef} id="color-selection" name="color-selection">
             <option value="Красный">Красный</option>
             <option value="Зеленый">Зеленый</option>
             <option value="Синий">Синий</option>
@@ -129,12 +120,12 @@ class UncontrolledComponent extends React.Component<Props> {
           <span style={{ color: checkbox1Filled || checkbox2Filled ? 'inherit' : 'red' }}>
             Наличие камер:
           </span>
-          <label>
-            <input type="checkbox" ref={this.checkbox1Ref} name="checkbox-1" />
+          <label htmlFor="checkbox-1">
+            <input type="checkbox" ref={this.checkbox1Ref} id="checkbox-1" name="checkbox-1" />
             Передняя
           </label>
-          <label>
-            <input type="checkbox" ref={this.checkbox2Ref} name="checkbox-2" />
+          <label htmlFor="checkbox-2">
+            <input type="checkbox" ref={this.checkbox2Ref} id="checkbox-2" name="checkbox-2" />
             Задняя
           </label>
         </div>
@@ -151,7 +142,13 @@ class UncontrolledComponent extends React.Component<Props> {
           <label htmlFor="image-input" style={{ color: imageFilled ? 'inherit' : 'red' }}>
             Картинка
           </label>
-          <input type="file" accept="image/*" ref={this.imageRef} name="image-input" />
+          <input
+            type="file"
+            accept="image/*"
+            ref={this.imageRef}
+            id="image-input"
+            name="image-input"
+          />
         </div>
         <button type="submit">Отправить</button>
       </form>

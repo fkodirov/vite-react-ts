@@ -1,21 +1,8 @@
 import { Component } from 'react';
+import { data, StateNewCard } from '../types/types';
 
-interface Props {
-  data: FormData;
-}
-
-interface State {
-  textInputValue: string;
-  dateInputValue: string;
-  colorSelectionValue: string;
-  checkbox1Checked: boolean;
-  checkbox2Checked: boolean;
-  switcherValue: string;
-  imageSrc: string;
-}
-
-class NewCard extends Component<Props, State> {
-  state: State = {
+class NewCard extends Component<data, StateNewCard> {
+  state: StateNewCard = {
     textInputValue: '',
     dateInputValue: '',
     colorSelectionValue: '',
