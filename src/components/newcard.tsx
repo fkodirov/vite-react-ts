@@ -1,19 +1,19 @@
-import { Component } from 'react';
-import { data, StateNewCard } from '../types/types';
+import { useEffect, useState } from 'react';
 
-class NewCard extends Component<data, StateNewCard> {
-  state: StateNewCard = {
-    textInputValue: '',
-    dateInputValue: '',
-    colorSelectionValue: '',
-    checkbox1Checked: false,
-    checkbox2Checked: false,
-    switcherValue: '',
-    imageSrc: '',
-  };
+interface Props {
+  data: Map<string, unknown>;
+}
 
-  componentDidMount() {
-    const { data } = this.props;
+function NewCard({ data }: Props) {
+  const [textInputValue, setTextInputValue] = useState('');
+  const [dateInputValue, setDateInputValue] = useState('');
+  const [colorSelectionValue, setColorSelectionValue] = useState('');
+  const [checkbox1Checked, setCheckbox1Checked] = useState(false);
+  const [checkbox2Checked, setCheckbox2Checked] = useState(false);
+  const [switcherValue, setSwitcherValue] = useState('');
+  const [imageSrc, setImageSrc] = useState('');
+
+  useEffect(() => {
     const textInputValue = data.get('textinput') as string;
     const dateInputValue = data.get('date-input') as string;
     const colorSelectionValue = data.get('color-selection') as string;
@@ -23,72 +23,60 @@ class NewCard extends Component<data, StateNewCard> {
     const imageFile = data.get('image-input') as File;
 
     if (textInputValue) {
-      this.setState({ textInputValue });
+      setTextInputValue(textInputValue);
     }
     if (dateInputValue) {
-      this.setState({ dateInputValue });
+      setDateInputValue(dateInputValue);
     }
     if (colorSelectionValue) {
-      this.setState({ colorSelectionValue });
+      setColorSelectionValue(colorSelectionValue);
     }
     if (checkbox1Checked) {
-      this.setState({ checkbox1Checked });
+      setCheckbox1Checked(checkbox1Checked);
     }
     if (checkbox2Checked) {
-      this.setState({ checkbox2Checked });
+      setCheckbox2Checked(checkbox2Checked);
     }
     if (switcherValue) {
-      this.setState({ switcherValue });
+      setSwitcherValue(switcherValue);
     }
     if (imageFile) {
       const reader = new FileReader();
       reader.readAsDataURL(imageFile);
       reader.onload = () => {
         if (typeof reader.result === 'string') {
-          this.setState({ imageSrc: reader.result });
+          setImageSrc(reader.result);
         }
       };
     }
-  }
+  }, [data]);
 
-  render() {
-    const {
-      textInputValue,
-      dateInputValue,
-      colorSelectionValue,
-      checkbox1Checked,
-      checkbox2Checked,
-      switcherValue,
-      imageSrc,
-    } = this.state;
-
-    return (
-      <div className="new-card">
-        <div>
-          <strong>Название: </strong> {textInputValue}
-        </div>
-        <div>
-          <strong>Дата выпуска: </strong> {dateInputValue}
-        </div>
-        <div>
-          <strong>Цвет: </strong> {colorSelectionValue}
-        </div>
-        <div>
-          <strong>Камера: </strong>
-          {checkbox1Checked ? (checkbox2Checked ? 'Задняя/Передняя' : 'Передняя') : 'Задняя'}
-        </div>
-
-        <div>
-          <strong>Участие в ДТП: </strong> {switcherValue}
-        </div>
-        {imageSrc && (
-          <div>
-            <img src={imageSrc} className="card-img" alt="Uploaded file" />
-          </div>
-        )}
+  return (
+    <div className="new-card">
+      <div>
+        <strong>Название: </strong> {textInputValue}
       </div>
-    );
-  }
+      <div>
+        <strong>Дата выпуска: </strong> {dateInputValue}
+      </div>
+      <div>
+        <strong>Цвет: </strong> {colorSelectionValue}
+      </div>
+      <div>
+        <strong>Камера: </strong>
+        {checkbox1Checked ? (checkbox2Checked ? 'Задняя/Передняя' : 'Передняя') : 'Задняя'}
+      </div>
+
+      <div>
+        <strong>Участие в ДТП: </strong> {switcherValue}
+      </div>
+      {imageSrc && (
+        <div>
+          <img src={imageSrc} className="card-img" alt="Uploaded file" />
+        </div>
+      )}
+    </div>
+  );
 }
 
 export default NewCard;

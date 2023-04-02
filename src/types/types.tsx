@@ -30,3 +30,12 @@ export interface StateNewCard {
   switcherValue: string;
   imageSrc: string;
 }
+
+export interface Car {
+  brand: string;
+  model: string;
+  year: number;
+  color: string;
+  price: number;
+  image: string;
+}

@@ -1,55 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface Props {
   onSearch: (query: string) => void;
 }
 
-interface State {
-  query: string;
-}
+const SearchBar: React.FC<Props> = ({ onSearch }) => {
+  const [query, setQuery] = useState(() => localStorage.getItem('searchQuery') || '');
 
-class SearchBar extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-    this.state = {
-      query: localStorage.getItem('searchQuery') || '',
+  useEffect(() => {
+    const saveToLocalStorage = () => {
+      localStorage.setItem('searchQuery', query);
     };
-  }
 
-  componentDidMount() {
-    window.addEventListener('beforeunload', this.saveToLocalStorage);
-  }
+    window.addEventListener('beforeunload', saveToLocalStorage);
 
-  componentWillUnmount() {
-    localStorage.setItem('searchQuery', this.state.query);
-  }
+    return () => {
+      window.removeEventListener('beforeunload', saveToLocalStorage);
+      localStorage.setItem('searchQuery', query);
+    };
+  }, [query]);
 
-  saveToLocalStorage = () => {
-    localStorage.setItem('searchQuery', this.state.query);
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setQuery(event.target.value);
   };
 
-  handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    this.setState({ query: event.target.value });
-  };
-
-  handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    this.props.onSearch(this.state.query);
+    onSearch(query);
   };
 
-  render() {
-    return (
-      <form className="search-form" onSubmit={this.handleSubmit}>
-        <input
-          type="text"
-          className="search-bar"
-          value={this.state.query}
-          onChange={this.handleChange}
-        />
-        <button type="submit">Поиск</button>
-      </form>
-    );
-  }
-}
+  return (
+    <form className="search-form" onSubmit={handleSubmit}>
+      <input type="text" className="search-bar" value={query} onChange={handleChange} />
+      <button type="submit">Поиск</button>
+    </form>
+  );
+};
 
 export default SearchBar;
