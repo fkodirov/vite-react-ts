@@ -1,24 +1,35 @@
-import React, { useState } from 'react';
+import { Component } from 'react';
 import UncontrolledComponent from '../components/Form';
 import NewCard from '../components/NewCard';
 
-const FormsPage: React.FC = () => {
-  const [cardData, setCardData] = useState<FormData[]>([]);
-
-  const handleSubmit = (formData: FormData): void => {
-    setCardData((prevData) => [...prevData, formData]);
+class FormsPage extends Component {
+  state = {
+    cardData: [],
+    showHeader: false,
   };
 
-  return (
-    <div>
-      <UncontrolledComponent onSubmit={handleSubmit} />
-      <div className="new-cards">
-        {cardData.map((data, index) => (
-          <NewCard key={index} data={data} />
-        ))}
+  handleSubmit = (formData: FormData): void => {
+    const { cardData } = this.state;
+    this.setState({
+      cardData: [...cardData, formData],
+      showHeader: true,
+    });
+    console.log(cardData);
+  };
+
+  render() {
+    const { cardData } = this.state;
+    return (
+      <div>
+        <UncontrolledComponent onSubmit={this.handleSubmit} />
+        <div className="new-cards">
+          {cardData.map((data, index) => (
+            <NewCard key={index} data={data} />
+          ))}
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export { FormsPage };

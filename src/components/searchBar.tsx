@@ -31,7 +31,13 @@ const SearchBar: React.FC<Props> = ({ onSearch }) => {
 
   return (
     <form className="search-form" onSubmit={handleSubmit}>
-      <input type="text" className="search-bar" value={query} onChange={handleChange} />
+      <input
+        type="text"
+        placeholder="Поиск..."
+        className="search-bar"
+        value={query}
+        onChange={handleChange}
+      />
       <button type="submit">Поиск</button>
     </form>
   );
