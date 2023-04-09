@@ -39,3 +39,11 @@ export interface Car {
   price: number;
   image: string;
 }
+export interface Product {
+  id: number;
+  rating: number;
+  title: string;
+  brand: string;
+  thumbnail: string;
+  price: number;
+}

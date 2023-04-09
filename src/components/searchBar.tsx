@@ -1,44 +1,33 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-interface Props {
+interface SearchBarProps {
   onSearch: (query: string) => void;
 }
 
-const SearchBar: React.FC<Props> = ({ onSearch }) => {
-  const [query, setQuery] = useState(() => localStorage.getItem('searchQuery') || '');
-
-  useEffect(() => {
-    const saveToLocalStorage = () => {
-      localStorage.setItem('searchQuery', query);
-    };
-
-    window.addEventListener('beforeunload', saveToLocalStorage);
-
-    return () => {
-      window.removeEventListener('beforeunload', saveToLocalStorage);
-      localStorage.setItem('searchQuery', query);
-    };
-  }, [query]);
+const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setQuery(event.target.value);
+    setSearchQuery(event.target.value);
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    onSearch(query);
+    onSearch(searchQuery);
+    navigate(`/search?q=${searchQuery}`); // изменяем URL на "/search?q=<запрос>"
   };
 
   return (
-    <form className="search-form" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Поиск..."
-        className="search-bar"
-        value={query}
+        value={searchQuery}
         onChange={handleChange}
+        placeholder="Search products"
       />
-      <button type="submit">Поиск</button>
+      <button type="submit">Search</button>
     </form>
   );
 };

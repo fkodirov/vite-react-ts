@@ -1,19 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SearchBar from '../components/SearchBar';
-import data from '../data.json';
-import Card from '../components/Card';
-import { Car } from '../types/types';
+import { Card } from '../components/Card';
+import { Product } from '../types/types';
 
 const MainPage: React.FC = () => {
-  const [searchResults, setSearchResults] = React.useState<Car[]>(data);
+  const [searchResults, setSearchResults] = useState<Product[]>([]);
 
-  const handleSearch = (query: string) => {
-    const filteredData = data.filter((car: Car) => {
-      const searchValue = `${car.brand} ${car.model} ${car.year} ${car.color}`.toLowerCase();
-      return searchValue.includes(query.toLowerCase());
-    });
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('https://dummyjson.com/products');
+        const data = await response.json();
+        console.log('API response:', data);
+        setSearchResults(data.products);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchProducts();
+  }, []);
 
-    setSearchResults(filteredData);
+  const handleSearch = async (query: string) => {
+    try {
+      const response = await fetch(`https://dummyjson.com/products/search?q=${query}`);
+      const data = await response.json();
+      console.log('API response:', data);
+      setSearchResults(data.products);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -21,8 +36,9 @@ const MainPage: React.FC = () => {
       <h1>Главная страница</h1>
       <SearchBar onSearch={handleSearch} />
       <div className="cards">
-        {searchResults.map((car: Car, index: number) => (
-          <Card car={car} key={index} />
+        {/* console.log('searchResults:', searchResults); */}
+        {searchResults.map((product: Product, index: number) => (
+          <Card product={product} key={index} />
         ))}
       </div>
     </div>

@@ -1,33 +1,72 @@
-import React from 'react';
-import { Props } from '../types/types';
+import React, { useState } from 'react';
+import { Product } from '../types/types';
 
-const Card: React.FC<Props> = ({ car }) => {
+interface CardProps {
+  product: Product;
+}
+
+const Card: React.FC<CardProps> = ({ product }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => setIsModalOpen(false);
+
+  const openModal = () => setIsModalOpen(true);
+
   return (
-    <div className="card">
-      <div className="card-img">
-        <img src={`assets/cars/${car.image}`} alt={`${car.brand} ${car.model}`} width="220" />
-      </div>
-      <div className="product-title">{car.brand}</div>
-      <div className="product-info">
-        <div className="info category">
-          <span>Модель</span>
-          <span>{car.model}</span>
+    <>
+      <div className="card" onClick={openModal}>
+        <div className="card-img">
+          <img src={`${product.thumbnail}`} alt={`${product.brand} ${product.title}`} width="220" />
         </div>
-        <div className="info brand">
-          <span>Год</span>
-          <span>{car.year}</span>
-        </div>
-        <div className="info discount">
-          <span>Цвет</span>
-          <span>{car.color}</span>
-        </div>
-        <div className="info price">
-          <span>Цена</span>
-          <span>{car.price}</span>
+        <div className="product-title">{product.title}</div>
+        <div className="product-info">
+          <div className="info category">
+            <span>Brand</span>
+            <span>{product.brand}</span>
+          </div>
+          <div className="info brand">
+            <span>Price</span>
+            <span>{product.price}</span>
+          </div>
+          <div className="info discount">
+            <span>Rating</span>
+            <span>{product.rating}</span>
+          </div>
         </div>
       </div>
-    </div>
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal">
+            <div className="modal-close" onClick={closeModal}>
+              &#10005;
+            </div>
+            <div className="modal-content">
+              <img
+                src={`${product.thumbnail}`}
+                alt={`${product.brand} ${product.title}`}
+                width="220"
+              />
+              <div className="product-title">{product.title}</div>
+              <div className="product-info">
+                <div className="info category">
+                  <span>Brand</span>
+                  <span>{product.brand}</span>
+                </div>
+                <div className="info brand">
+                  <span>Price</span>
+                  <span>{product.price}</span>
+                </div>
+                <div className="info discount">
+                  <span>Rating</span>
+                  <span>{product.rating}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
-export default Card;
+export { Card };
