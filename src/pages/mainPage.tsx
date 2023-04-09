@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import SearchBar from '../components/SearchBar';
 import { Card } from '../components/Card';
 import { Product } from '../types/types';
 
 const MainPage: React.FC = () => {
   const [searchResults, setSearchResults] = useState<Product[]>([]);
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const query = queryParams.get('q') ?? '';
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -31,12 +35,17 @@ const MainPage: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    if (query) {
+      handleSearch(query);
+    }
+  }, [query]);
+
   return (
     <div>
       <h1>Главная страница</h1>
       <SearchBar onSearch={handleSearch} />
       <div className="cards">
-        {/* console.log('searchResults:', searchResults); */}
         {searchResults.map((product: Product, index: number) => (
           <Card product={product} key={index} />
         ))}
