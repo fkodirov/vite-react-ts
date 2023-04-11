@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 interface SearchBarProps {
@@ -9,8 +9,22 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
 
+  useEffect(() => {
+    const savedQuery = localStorage.getItem('searchQuery');
+    if (savedQuery) {
+      setSearchQuery(savedQuery);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (searchQuery) {
+      localStorage.setItem('searchQuery', searchQuery);
+    }
+  }, [searchQuery]);
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchQuery(event.target.value);
+    const value = event.target.value;
+    setSearchQuery(value);
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {

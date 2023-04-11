@@ -43,3 +43,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.loading {
+  font-size: 30px;
+  font-weight: 700;
+}

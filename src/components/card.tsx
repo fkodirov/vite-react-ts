@@ -12,6 +12,10 @@ const Card: React.FC<CardProps> = ({ product }) => {
 
   const openModal = () => setIsModalOpen(true);
 
+  const stopPropagation = (event: React.MouseEvent<HTMLDivElement>) => {
+    event.stopPropagation();
+  };
+
   return (
     <>
       <div className="card" onClick={openModal}>
@@ -36,7 +40,7 @@ const Card: React.FC<CardProps> = ({ product }) => {
       </div>
       {isModalOpen && (
         <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal">
+          <div className="modal" onClick={stopPropagation}>
             <div className="modal-close" onClick={closeModal}>
               &#10005;
             </div>

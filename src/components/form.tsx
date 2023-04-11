@@ -57,7 +57,7 @@ const UncontrolledComponent = ({ onSubmit }: Props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmitHandler)} className="my-form">
+    <form onSubmit={handleSubmit(onSubmitHandler)} className="my-form" data-testid="my-form">
       <div>
         <label htmlFor="textinput" style={{ color: errors.textinput ? 'red' : 'inherit' }}>
           Название:
@@ -107,7 +107,9 @@ const UncontrolledComponent = ({ onSubmit }: Props) => {
         </label>
       </div>
       <div>
-        <label htmlFor="image-input">Изображение:</label>
+        <label htmlFor="image-input" style={{ color: errors.textinput ? 'red' : 'inherit' }}>
+          Картинка
+        </label>
         <input type="file" id="image-input" {...register('image-input', { required: true })} />
         {errors['image-input'] && <span>Пожалуйста, добавьте изображение</span>}
       </div>
