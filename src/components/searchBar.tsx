@@ -16,7 +16,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     onSearch(searchQuery);
-    navigate(`/search?q=${searchQuery}`); // изменяем URL на "/search?q=<запрос>"
+    navigate(`/search?q=${searchQuery}`);
   };
 
   return (

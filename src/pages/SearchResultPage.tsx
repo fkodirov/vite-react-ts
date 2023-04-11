@@ -27,7 +27,6 @@ function SearchResultPage() {
     try {
       const response = await fetch(`https://dummyjson.com/products/search?q=${query}`);
       const data = await response.json();
-      console.log('API response:', data);
       setSearchResults(data.products);
     } catch (error) {
       console.error(error);
@@ -38,7 +37,6 @@ function SearchResultPage() {
       try {
         const response = await fetch('https://dummyjson.com/products');
         const data = await response.json();
-        console.log('API response:', data);
         setSearchResults(data.products);
       } catch (error) {
         console.error(error);
