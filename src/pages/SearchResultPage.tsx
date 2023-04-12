@@ -5,7 +5,7 @@ import { Card } from '../components/Card';
 
 function SearchResultPage() {
   const [searchResults, setSearchResults] = useState([]);
-  const [isLoading, setIsLoading] = useState(true); // add new state variable
+  const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const query = queryParams.get('q') ?? '';
@@ -13,12 +13,12 @@ function SearchResultPage() {
   useEffect(() => {
     const searchQuery = new URLSearchParams(location.search).get('q');
     if (searchQuery) {
-      setIsLoading(true); // set isLoading to true before fetching data
+      setIsLoading(true);
       fetch(`https://dummyjson.com/products/search?q=${searchQuery}`)
         .then((response) => response.json())
         .then((data) => {
           setSearchResults(data.products);
-          setIsLoading(false); // set isLoading to false after data is fetched
+          setIsLoading(false);
         })
         .catch((error) => {
           console.error(error);
@@ -27,7 +27,7 @@ function SearchResultPage() {
   }, [location.search]);
 
   const handleSearch = async (query: string) => {
-    setIsLoading(true); // set isLoading to true before fetching data
+    setIsLoading(true);
     try {
       const response = await fetch(`https://dummyjson.com/products/search?q=${query}`);
       const data = await response.json();
@@ -35,12 +35,12 @@ function SearchResultPage() {
     } catch (error) {
       console.error(error);
     }
-    setIsLoading(false); // set isLoading to false after data is fetched
+    setIsLoading(false);
   };
 
   useEffect(() => {
     const fetchProducts = async () => {
-      setIsLoading(true); // set isLoading to true before fetching data
+      setIsLoading(true);
       try {
         const response = await fetch('https://dummyjson.com/products');
         const data = await response.json();
@@ -48,7 +48,7 @@ function SearchResultPage() {
       } catch (error) {
         console.error(error);
       }
-      setIsLoading(false); // set isLoading to false after data is fetched
+      setIsLoading(false);
     };
     fetchProducts();
   }, []);

@@ -14,7 +14,6 @@ class FormsPage extends Component {
       cardData: [...cardData, formData],
       showHeader: true,
     });
-    console.log(cardData);
   };
 
   render() {
