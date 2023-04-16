@@ -1,75 +1,59 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { ThunkDispatch } from 'redux-thunk';
+import { AnyAction } from 'redux';
+import { RootState } from '../store';
+import { fetchProducts, searchProducts } from '../../src/components/productSlice';
 import SearchBar from '../components/SearchBar';
 import { Card } from '../components/Card';
 
 function SearchResultPage() {
-  const [searchResults, setSearchResults] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const dispatch: ThunkDispatch<RootState, void, AnyAction> = useDispatch();
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const query = queryParams.get('q') ?? '';
 
-  useEffect(() => {
-    const searchQuery = new URLSearchParams(location.search).get('q');
-    if (searchQuery) {
-      setIsLoading(true);
-      fetch(`https://dummyjson.com/products/search?q=${searchQuery}`)
-        .then((response) => response.json())
-        .then((data) => {
-          setSearchResults(data.products);
-          setIsLoading(false);
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    }
-  }, [location.search]);
-
-  const handleSearch = async (query: string) => {
-    setIsLoading(true);
-    try {
-      const response = await fetch(`https://dummyjson.com/products/search?q=${query}`);
-      const data = await response.json();
-      setSearchResults(data.products);
-    } catch (error) {
-      console.error(error);
-    }
-    setIsLoading(false);
-  };
+  const { data: searchResults = [], isLoading: isSearching } = useSelector(
+    (state: RootState) => state.products.search
+  );
+  const { data: products = [], isLoading: isFetching } = useSelector(
+    (state: RootState) => state.products.all
+  );
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      setIsLoading(true);
-      try {
-        const response = await fetch('https://dummyjson.com/products');
-        const data = await response.json();
-        setSearchResults(data.products);
-      } catch (error) {
-        console.error(error);
-      }
-      setIsLoading(false);
-    };
-    fetchProducts();
-  }, []);
+    dispatch(fetchProducts());
+  }, [dispatch]);
 
   useEffect(() => {
     if (query) {
-      handleSearch(query);
+      dispatch(searchProducts(query));
     }
-  }, [query]);
+  }, [dispatch, query]);
+
+  const handleSearch = (query: string) => {
+    dispatch(searchProducts(query));
+  };
 
   return (
     <div>
       <h1>Search Page</h1>
       <SearchBar onSearch={handleSearch} />
-      {isLoading ? (
-        <div className="loading">Loading...</div>
-      ) : searchResults.length > 0 ? (
+      {(isSearching || isFetching) && <div className="loading">Loading...</div>}
+      {searchResults.length > 0 ? (
         <div>
           <h3>Search Results</h3>
           <div className="cards">
             {searchResults.map((product, index) => (
+              <Card key={index} product={product} />
+            ))}
+          </div>
+        </div>
+      ) : products.length > 0 ? (
+        <div>
+          <h3>All Products</h3>
+          <div className="cards">
+            {products.map((product, index) => (
               <Card key={index} product={product} />
             ))}
           </div>
