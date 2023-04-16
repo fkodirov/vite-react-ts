@@ -1,0 +1,52 @@
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  grid-gap: 10px 10px;
+  padding: 25px;
+}
+.card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%), 0 6px 15px 0 rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-img img {
+  height: 117px;
+}
+.card-title {
+  display: flex;
+  justify-content: center;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+}

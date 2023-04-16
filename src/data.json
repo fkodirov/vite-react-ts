@@ -1,0 +1,92 @@
+[
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "year": 2018,
+    "color": "white",
+    "body_type": "SUV",
+    "price": 30000,
+    "image": "bmw-x5-white.png"
+  },
+  {
+    "brand": "Audi",
+    "model": "A4",
+    "year": 2019,
+    "color": "gray",
+    "body_type": "sedan",
+    "price": 22000,
+    "image": "audi-a4-gray.png"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLC",
+    "year": 2020,
+    "color": "red",
+    "body_type": "SUV",
+    "price": 36000,
+    "image": "mercedes-glc-red.png"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2017,
+    "color": "black",
+    "body_type": "sedan",
+    "price": 16000,
+    "image": "toyota-camry-black.png"
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC90",
+    "year": 2021,
+    "color": "blue",
+    "body_type": "SUV",
+    "price": 42000,
+    "image": "volvo-xc90-blue.png"
+  },
+  {
+    "brand": "Lamborghini",
+    "model": "Aventador",
+    "year": 2022,
+    "color": "yellow",
+    "body_type": "coupe",
+    "price": 180000,
+    "image": "lamborghini-aventador-yellow.png"
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 2016,
+    "color": "red",
+    "body_type": "coupe",
+    "price": 25000,
+    "image": "ford-mustang-red.png"
+  },
+  {
+    "brand": "Porsche",
+    "model": "911",
+    "year": 2021,
+    "color": "white",
+    "body_type": "coupe",
+    "price": 84000,
+    "image": "porsche-911-white.png"
+  },
+  {
+    "brand": "Chevrolet",
+    "model": "Camaro",
+    "year": 2015,
+    "color": "orange",
+    "body_type": "coupe",
+    "price": 20000,
+    "image": "chevrolet-camaro-orange.png"
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-5",
+    "year": 2020,
+    "color": "silver",
+    "body_type": "SUV",
+    "price": 28000,
+    "image": "mazda-cx5-silver.png"
+  }
+]
