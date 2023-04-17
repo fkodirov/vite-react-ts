@@ -3,8 +3,8 @@ import { useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { ThunkDispatch } from 'redux-thunk';
 import { AnyAction } from 'redux';
-import { RootState } from '../store';
-import { fetchProducts, searchProducts } from '../../src/components/productSlice';
+import { RootState } from '../store/store';
+import { fetchProducts, searchProducts } from '../store/features/productSlice';
 import SearchBar from '../components/SearchBar';
 import { Card } from '../components/Card';
 
@@ -59,7 +59,7 @@ function SearchResultPage() {
           </div>
         </div>
       ) : (
-        <p>No results found</p>
+        <p>{isSearching || isFetching ? 'Loading...' : 'No results found'}</p>
       )}
     </div>
   );

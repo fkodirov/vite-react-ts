@@ -1,36 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { setQuery } from '../store/features/searchSlice';
+import { RootState } from '../store/store';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const savedQuery = localStorage.getItem('searchQuery');
-    if (savedQuery) {
-      setSearchQuery(savedQuery);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (searchQuery) {
-      localStorage.setItem('searchQuery', searchQuery);
-    }
-  }, [searchQuery]);
+  const searchQuery = useSelector((state: RootState) => state.search.query);
+  const dispatch = useDispatch();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const value = event.target.value;
-    setSearchQuery(value);
+    dispatch(setQuery(value));
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     onSearch(searchQuery);
-    navigate(`/search?q=${searchQuery}`);
   };
 
   return (

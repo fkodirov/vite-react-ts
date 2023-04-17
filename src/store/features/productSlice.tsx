@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { RootState } from '../store';
-import { Product } from '../types/types';
+import { Product } from '../../types/types';
 
 interface ProductState {
   products: Product[];
@@ -51,16 +51,29 @@ export const productSlice = createSlice({
       })
       .addCase(fetchProducts.fulfilled, (state, action) => {
         state.status = 'idle';
-        state.products = action.payload;
+        state.all.isLoading = false;
+        state.all.data = action.payload;
       })
       .addCase(fetchProducts.rejected, (state, action) => {
         state.status = 'failed';
-        state.error = action.error.message ?? 'Something went wrong';
+        state.all.isLoading = false;
+        state.all.error = action.error.message ?? 'Something went wrong';
+      })
+      .addCase(searchProducts.pending, (state) => {
+        state.search.isLoading = true;
+      })
+      .addCase(searchProducts.fulfilled, (state, action) => {
+        state.search.isLoading = false;
+        state.search.data = action.payload;
+      })
+      .addCase(searchProducts.rejected, (state, action) => {
+        state.search.isLoading = false;
+        state.search.error = action.error.message ?? 'Something went wrong';
       });
   },
 });
 export const searchProducts = createAsyncThunk('products/searchProducts', async (query: string) => {
-  const response = await fetch(`https://dummyjson.com/products?search=${query}`);
+  const response = await fetch(`https://dummyjson.com/products/search?q=${query}`);
   const data = await response.json();
   return data.products;
 });
