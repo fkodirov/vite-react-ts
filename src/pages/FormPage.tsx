@@ -1,34 +1,26 @@
-import { Component } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import UncontrolledComponent from '../components/Form';
 import NewCard from '../components/NewCard';
+import { addCardData, selectCardData } from '../store/features/formsSlice';
 
-class FormsPage extends Component {
-  state = {
-    cardData: [],
-    showHeader: false,
+const FormsPage = () => {
+  const dispatch = useDispatch();
+  const cardData = useSelector(selectCardData);
+
+  const handleSubmit = (formData: FormData): void => {
+    dispatch(addCardData(formData));
   };
 
-  handleSubmit = (formData: FormData): void => {
-    const { cardData } = this.state;
-    this.setState({
-      cardData: [...cardData, formData],
-      showHeader: true,
-    });
-  };
-
-  render() {
-    const { cardData } = this.state;
-    return (
-      <div>
-        <UncontrolledComponent onSubmit={this.handleSubmit} />
-        <div className="new-cards">
-          {cardData.map((data, index) => (
-            <NewCard key={index} data={data} />
-          ))}
-        </div>
+  return (
+    <div>
+      <UncontrolledComponent onSubmit={handleSubmit} />
+      <div className="new-cards">
+        {cardData.map((data, index) => (
+          <NewCard key={index} data={data} />
+        ))}
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export { FormsPage };
