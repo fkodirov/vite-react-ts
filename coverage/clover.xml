@@ -1,84 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1681324992882" clover="3.2.0">
-  <project timestamp="1681324992882" name="All files">
-    <metrics statements="69" coveredstatements="53" conditionals="39" coveredconditionals="29" methods="10" coveredmethods="8" elements="118" coveredelements="90" complexity="0" loc="69" ncloc="69" packages="1" files="3" classes="3"/>
-    <file name="Form.tsx" path="D:\rs_school_react\vite-react-ts\src\components\Form.tsx">
-      <metrics statements="17" coveredstatements="6" conditionals="23" coveredconditionals="17" methods="2" coveredmethods="1"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="24" count="7" type="stmt"/>
-      <line num="36" count="7" type="stmt"/>
-      <line num="37" count="0" type="stmt"/>
-      <line num="38" count="0" type="stmt"/>
-      <line num="39" count="0" type="stmt"/>
-      <line num="40" count="0" type="stmt"/>
-      <line num="41" count="0" type="stmt"/>
-      <line num="42" count="0" type="stmt"/>
-      <line num="43" count="0" type="stmt"/>
-      <line num="44" count="0" type="cond" truecount="0" falsecount="3"/>
-      <line num="45" count="0" type="stmt"/>
-      <line num="47" count="0" type="stmt"/>
-      <line num="48" count="0" type="stmt"/>
-      <line num="59" count="7" type="stmt"/>
-      <line num="123" count="1" type="stmt"/>
-    </file>
-    <file name="NewCard.tsx" path="D:\rs_school_react\vite-react-ts\src\components\NewCard.tsx">
-      <metrics statements="31" coveredstatements="26" conditionals="14" coveredconditionals="10" methods="3" coveredmethods="2"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="19" count="1" type="stmt"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="21" count="1" type="stmt"/>
-      <line num="22" count="1" type="stmt"/>
-      <line num="23" count="1" type="stmt"/>
-      <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="26" count="1" type="stmt"/>
-      <line num="28" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="31" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="34" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="35" count="1" type="stmt"/>
-      <line num="37" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="38" count="1" type="stmt"/>
-      <line num="40" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="41" count="1" type="stmt"/>
-      <line num="43" count="1" type="cond" truecount="0" falsecount="1"/>
-      <line num="44" count="0" type="stmt"/>
-      <line num="45" count="0" type="stmt"/>
-      <line num="46" count="0" type="stmt"/>
-      <line num="47" count="0" type="cond" truecount="0" falsecount="1"/>
-      <line num="48" count="0" type="stmt"/>
-      <line num="63" count="2" type="stmt"/>
-      <line num="65" count="2" type="stmt"/>
-      <line num="94" count="1" type="stmt"/>
-    </file>
-    <file name="SearchBar.tsx" path="D:\rs_school_react\vite-react-ts\src\components\SearchBar.tsx">
-      <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="9" count="9" type="stmt"/>
-      <line num="10" count="9" type="stmt"/>
-      <line num="12" count="9" type="stmt"/>
-      <line num="13" count="4" type="stmt"/>
-      <line num="14" count="4" type="cond" truecount="1" falsecount="0"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="19" count="9" type="stmt"/>
-      <line num="20" count="7" type="cond" truecount="1" falsecount="0"/>
-      <line num="21" count="3" type="stmt"/>
-      <line num="25" count="9" type="stmt"/>
-      <line num="26" count="1" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="30" count="9" type="stmt"/>
-      <line num="31" count="2" type="stmt"/>
-      <line num="32" count="2" type="stmt"/>
-      <line num="33" count="2" type="stmt"/>
-      <line num="36" count="9" type="stmt"/>
-      <line num="49" count="1" type="stmt"/>
-    </file>
+<coverage generated="1682891943011" clover="3.2.0">
+  <project timestamp="1682891943012" name="All files">
+    <metrics statements="67" coveredstatements="48" conditionals="37" coveredconditionals="21" methods="10" coveredmethods="6" elements="114" coveredelements="75" complexity="0" loc="67" ncloc="67" packages="2" files="4" classes="4"/>
+    <package name="components">
+      <metrics statements="61" coveredstatements="43" conditionals="37" coveredconditionals="21" methods="9" coveredmethods="6"/>
+      <file name="Form.tsx" path="D:\rs_school_react\vite-react-ts\src\components\Form.tsx">
+        <metrics statements="17" coveredstatements="6" conditionals="23" coveredconditionals="11" methods="2" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="121" count="1" type="stmt"/>
+      </file>
+      <file name="NewCard.tsx" path="D:\rs_school_react\vite-react-ts\src\components\NewCard.tsx">
+        <metrics statements="31" coveredstatements="26" conditionals="14" coveredconditionals="10" methods="3" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="34" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+        <line num="94" count="1" type="stmt"/>
+      </file>
+      <file name="SearchBar.tsx" path="D:\rs_school_react\vite-react-ts\src\components\SearchBar.tsx">
+        <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="store.features">
+      <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="searchSlice.tsx" path="D:\rs_school_react\vite-react-ts\src\store\features\searchSlice.tsx">
+        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

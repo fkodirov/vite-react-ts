@@ -5,7 +5,8 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     // "esModuleInterop": true,
-    "jsx": "react"
+    "jsx": "react",
+    "types": ["cypress"]
   },
   "include": ["vite.config.ts"]
 }

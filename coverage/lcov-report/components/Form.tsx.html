@@ -28,9 +28,9 @@
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">73.91% </span>
+            <span class="strong">47.82% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">17/23</span>
+            <span class="fraction">11/23</span>
           </div>
 
           <div class="fl pad1y space-right2">
@@ -179,9 +179,7 @@
 <a name='L119'></a><a href='#L119'>119</a>
 <a name='L120'></a><a href='#L120'>120</a>
 <a name='L121'></a><a href='#L121'>121</a>
-<a name='L122'></a><a href='#L122'>122</a>
-<a name='L123'></a><a href='#L123'>123</a>
-<a name='L124'></a><a href='#L124'>124</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L122'></a><a href='#L122'>122</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -204,7 +202,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -216,7 +214,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -239,9 +237,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -363,20 +359,20 @@ const UncontrolledComponent = ({ onSubmit }: Props) =&gt; {
   };
 &nbsp;
   return (
-    &lt;form onSubmit={handleSubmit(onSubmitHandler)} className="my-form"&gt;
+    &lt;form onSubmit={handleSubmit(onSubmitHandler)} className="my-form" data-testid="my-form"&gt;
       &lt;div&gt;
-        &lt;label htmlFor="textinput" style={{ color: errors.textinput ? 'red' : 'inherit' }}&gt;
+        &lt;label htmlFor="textinput" style={{ color: errors.textinput ? <span class="branch-0 cbranch-no" title="branch not covered" >'red' </span>: 'inherit' }}&gt;
           Название:
         &lt;/label&gt;
         &lt;input type="text" id="textinput" {...register('textinput', { required: true })} /&gt;
-        {errors.textinput &amp;&amp; &lt;span&gt;Пожалуйста, заполните поле&lt;/span&gt;}
+        {errors.textinput &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;span&gt;Пожалуйста, заполните поле&lt;/span&gt;}</span>
       &lt;/div&gt;
       &lt;div&gt;
-        &lt;label htmlFor="date-input" style={{ color: errors['date-input'] ? 'red' : 'inherit' }}&gt;
+        &lt;label htmlFor="date-input" style={{ color: errors['date-input'] ? <span class="branch-0 cbranch-no" title="branch not covered" >'red' </span>: 'inherit' }}&gt;
           Дата выпуска:
         &lt;/label&gt;
         &lt;input type="date" id="date-input" {...register('date-input', { required: true })} /&gt;
-        {errors['date-input'] &amp;&amp; &lt;span&gt;Пожалуйста, заполните поле&lt;/span&gt;}
+        {errors['date-input'] &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;span&gt;Пожалуйста, заполните поле&lt;/span&gt;}</span>
       &lt;/div&gt;
       &lt;div&gt;
         &lt;label htmlFor="color-selection"&gt;Цвет:&lt;/label&gt;
@@ -413,15 +409,13 @@ const UncontrolledComponent = ({ onSubmit }: Props) =&gt; {
         &lt;/label&gt;
       &lt;/div&gt;
       &lt;div&gt;
-        &lt;label htmlFor="image-input" style={{ color: errors.textinput ? 'red' : 'inherit' }}&gt;
+        &lt;label htmlFor="image-input" style={{ color: errors.textinput ? <span class="branch-0 cbranch-no" title="branch not covered" >'red' </span>: 'inherit' }}&gt;
           Картинка
         &lt;/label&gt;
         &lt;input type="file" id="image-input" {...register('image-input', { required: true })} /&gt;
-        {errors['image-input'] &amp;&amp; &lt;span&gt;Пожалуйста, добавьте изображение&lt;/span&gt;}
+        {errors['image-input'] &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;span&gt;Пожалуйста, добавьте изображение&lt;/span&gt;}</span>
       &lt;/div&gt;
-      &lt;button type="submit" data-testid="my-form"&gt;
-        Добавить
-      &lt;/button&gt;
+      &lt;button type="submit"&gt;Добавить&lt;/button&gt;
     &lt;/form&gt;
   );
 };
@@ -436,7 +430,7 @@ export default UncontrolledComponent;
     <div class="footer quiet pad2 space-top1 center small">
       Code coverage generated by
       <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-      at 2023-04-12T15:18:37.482Z
+      at 2023-04-30T21:59:02.977Z
     </div>
     <script src="../prettify.js"></script>
     <script>

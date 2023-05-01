@@ -6,7 +6,8 @@
     "prettier",
     "plugin:react-hooks/recommended",
     "plugin:prettier/recommended",
-    "eslint:recommended"
+    "eslint:recommended",
+    "plugin:cypress/recommended"
   ],
   "env": {
     "browser": true,
@@ -22,7 +23,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react", "prettier", "react-hooks"],
+  "plugins": ["@typescript-eslint", "react", "prettier", "react-hooks", "cypress"],
   "ignorePatterns": ["dist/"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",

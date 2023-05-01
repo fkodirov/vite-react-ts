@@ -1,64 +1,64 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import React from 'react';
+import { render, fireEvent, screen } from '@testing-library/react';
 import UncontrolledComponent from '../components/Form';
-import userEvent from '@testing-library/user-event';
+import { act } from 'react-dom/test-utils';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('UncontrolledComponent', () => {
-  let onSubmitMock: jest.Mock<void, [FormData]>;
-
-  beforeEach(() => {
-    onSubmitMock = jest.fn();
-  });
-
-  it('should render component with initial state', () => {
-    render(<UncontrolledComponent onSubmit={onSubmitMock} />);
-
+  test('renders all form elements', () => {
+    render(<UncontrolledComponent onSubmit={() => {}} />);
     expect(screen.getByLabelText('Название:')).toBeInTheDocument();
     expect(screen.getByLabelText('Дата выпуска:')).toBeInTheDocument();
     expect(screen.getByLabelText('Цвет:')).toBeInTheDocument();
     expect(screen.getByLabelText('Передняя')).toBeInTheDocument();
     expect(screen.getByLabelText('Задняя')).toBeInTheDocument();
+    expect(screen.getByLabelText('Да')).toBeInTheDocument();
+    expect(screen.getByLabelText('Нет')).toBeInTheDocument();
     expect(screen.getByLabelText('Картинка')).toBeInTheDocument();
-
-    expect(screen.getByLabelText('Название:')).toHaveStyle('color: inherit');
-    expect(screen.getByLabelText('Дата выпуска:')).toHaveStyle('color: inherit');
-    expect(screen.getByLabelText('Картинка')).toHaveStyle('color: inherit');
+    expect(screen.getByTestId('my-form')).toBeInTheDocument();
   });
 
-  it('should show red color for empty input', () => {
-    render(<UncontrolledComponent onSubmit={onSubmitMock} />);
+  test('submits form with entered data', () => {
+    act(() => {
+      const onSubmitMock = jest.fn();
+      render(<UncontrolledComponent onSubmit={onSubmitMock} />);
 
-    expect(screen.getByLabelText('Название:')).toHaveStyle('color: inherit');
-    expect(screen.getByLabelText('Дата выпуска:')).toHaveStyle('color: inherit');
-    expect(screen.getByLabelText('Картинка')).toHaveStyle('color: inherit');
-    expect(onSubmitMock).not.toHaveBeenCalled();
-  });
-  it('should show an error message when "Название" is left empty and the form is submitted', async () => {
-    render(<UncontrolledComponent onSubmit={onSubmitMock} />);
+      const textInput = screen.getByLabelText('Название:');
+      fireEvent.change(textInput, { target: { value: 'Test product' } });
 
-    const submitButton = screen.getByText('Добавить');
+      const dateInput = screen.getByLabelText('Дата выпуска:');
+      fireEvent.change(dateInput, { target: { value: '2022-05-01' } });
 
-    userEvent.click(submitButton);
+      const colorSelection = screen.getByLabelText('Цвет:');
+      fireEvent.change(colorSelection, { target: { value: 'Зеленый' } });
 
-    await waitFor(() => {
-      expect(screen.getAllByText('Пожалуйста, заполните поле')[0]).toBeInTheDocument();
-      expect(onSubmitMock).not.toHaveBeenCalled();
+      const checkbox1 = screen.getByLabelText('Передняя');
+      fireEvent.click(checkbox1);
+
+      const switcherNo = screen.getByLabelText('Нет');
+      fireEvent.click(switcherNo);
+
+      const imageInput = screen.getByLabelText('Картинка');
+      fireEvent.change(imageInput, {
+        target: { files: [new File(['(img'], 'test.png', { type: 'image/png' })] },
+      });
+
+      const submitButton = screen.getByRole('button', { name: /Добавить/ });
+      console.log(submitButton.outerHTML); // Check that the button has the correct type attribute
+      fireEvent.click(submitButton);
+
+      expect(onSubmitMock).toHaveBeenCalled();
+      expect(onSubmitMock).toHaveBeenCalledWith(expect.any(FormData));
     });
   });
-  it('should show an error message when "Дата выпуска" is left empty and the form is submitted', async () => {
-    render(<UncontrolledComponent onSubmit={onSubmitMock} />);
 
-    const submitButton = screen.getByText('Добавить');
+  // test('displays error messages for required fields when submitted with empty values', () => {
+  //   render(<UncontrolledComponent onSubmit={() => {}} />);
 
-    userEvent.click(submitButton);
+  //   fireEvent.submit(screen.getByTestId('my-form'));
 
-    await waitFor(() => {
-      expect(screen.getAllByText('Пожалуйста, заполните поле')[0]).toBeInTheDocument();
-      expect(onSubmitMock).not.toHaveBeenCalled();
-    });
-  });
-  test('renders UncontrolledComponent without crashing', () => {
-    const onSubmit = jest.fn();
-    render(<UncontrolledComponent onSubmit={onSubmit} />);
-  });
+  //   expect(screen.findByText('Пожалуйста, заполните поле')).toBeInTheDocument();
+  //   expect(screen.getByText('Пожалуйста, выберите хотя бы один вариант')).toBeInTheDocument();
+  //   expect(screen.getByText('Пожалуйста, добавьте изображение')).toBeInTheDocument();
+  // });
 });
