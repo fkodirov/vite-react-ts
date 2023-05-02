@@ -15,7 +15,7 @@
     "prebuild": "npm run lint:check && npm run format:check",
     "prestart": "npm run lint:check && npm run format:check",
     "test": "jest --env=jsdom",
-    "test:coverage": "jest --env=jsdom --coverage --silent",
+    "test:coverage": "jest --env=jsdom --coverage",
     "cypresstest": "npx nyc cypress run  && npx nyc report --reporter=text-summary",
     "test:e2e": "npx nyc cypress run"
   },

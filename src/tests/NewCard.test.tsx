@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
 import NewCard from '../components/NewCard';
 import '@testing-library/jest-dom';
-
 describe('NewCard', () => {
   const formData = new FormData();
   formData.set('textinput', 'Test Name');

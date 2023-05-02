@@ -660,15 +660,15 @@
     "s": {
       "0": 3,
       "1": 3,
-      "2": 6,
-      "3": 4,
-      "4": 4,
+      "2": 3,
+      "3": 3,
+      "4": 3,
       "5": 3,
       "6": 3,
-      "7": 6,
-      "8": 4,
-      "9": 4,
-      "10": 4,
+      "7": 3,
+      "8": 3,
+      "9": 3,
+      "10": 3,
       "11": 0,
       "12": 0,
       "13": 0,
@@ -689,10 +689,10 @@
       "28": 0
     },
     "f": {
-      "0": 6,
+      "0": 3,
       "1": 3,
-      "2": 6,
-      "3": 4,
+      "2": 3,
+      "3": 3,
       "4": 0,
       "5": 0,
       "6": 0,
@@ -703,8 +703,14 @@
       "11": 0
     },
     "b": {
-      "0": [0, 0],
-      "1": [0, 0]
+      "0": [
+        0,
+        0
+      ],
+      "1": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
@@ -744,7 +750,9 @@
         "selectProductError",
         "reducer"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/store/features/productSlice.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/store/features/productSlice.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/store/features/productSlice.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -848,7 +856,9 @@
         "actions",
         "reducer"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/store/features/searchSlice.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/store/features/searchSlice.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/store/features/searchSlice.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -1575,17 +1585,17 @@
       "7": 3,
       "8": 3,
       "9": 3,
-      "10": 14,
-      "11": 14,
-      "12": 27,
-      "13": 14,
-      "14": 14,
+      "10": 6,
+      "11": 6,
+      "12": 12,
+      "13": 6,
+      "14": 6,
       "15": 0,
       "16": 0,
-      "17": 14,
+      "17": 6,
       "18": 0,
       "19": 0,
-      "20": 14,
+      "20": 6,
       "21": 3,
       "22": 3,
       "23": 3,
@@ -1604,8 +1614,8 @@
     },
     "f": {
       "0": 3,
-      "1": 14,
-      "2": 27,
+      "1": 6,
+      "2": 12,
       "3": 0,
       "4": 0,
       "5": 3,
@@ -1613,11 +1623,26 @@
       "7": 0
     },
     "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [3, 0],
-      "3": [0, 0],
-      "4": [0, 0]
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        3
+      ],
+      "2": [
+        3,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
@@ -1643,7 +1668,9 @@
         "_c",
         "$RefreshReg$"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/components/SearchBar.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/components/SearchBar.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/components/SearchBar.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -2352,15 +2379,15 @@
       "7": 3,
       "8": 3,
       "9": 3,
-      "10": 246,
-      "11": 246,
-      "12": 246,
+      "10": 93,
+      "11": 93,
+      "12": 93,
       "13": 1,
-      "14": 246,
+      "14": 93,
       "15": 2,
-      "16": 246,
+      "16": 93,
       "17": 1,
-      "18": 246,
+      "18": 93,
       "19": 3,
       "20": 3,
       "21": 3,
@@ -2378,7 +2405,7 @@
     },
     "f": {
       "0": 3,
-      "1": 246,
+      "1": 93,
       "2": 1,
       "3": 2,
       "4": 1,
@@ -2386,12 +2413,30 @@
       "6": 0
     },
     "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [246, 4],
-      "3": [3, 0],
-      "4": [0, 0],
-      "5": [0, 0]
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        3
+      ],
+      "2": [
+        93,
+        2
+      ],
+      "3": [
+        3,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ],
+      "5": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
@@ -2415,7 +2460,9 @@
         "_c",
         "$RefreshReg$"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/components/Card.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/components/Card.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/components/Card.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -3465,19 +3512,19 @@
       "6": 3,
       "7": 3,
       "8": 3,
-      "9": 14,
-      "10": 14,
-      "11": 14,
-      "12": 27,
-      "13": 14,
-      "14": 27,
-      "15": 14,
-      "16": 6,
-      "17": 14,
+      "9": 6,
+      "10": 6,
+      "11": 6,
+      "12": 12,
+      "13": 6,
+      "14": 12,
+      "15": 6,
+      "16": 3,
+      "17": 6,
       "18": 0,
-      "19": 14,
+      "19": 6,
       "20": 0,
-      "21": 240,
+      "21": 90,
       "22": 3,
       "23": 3,
       "24": 3,
@@ -3496,30 +3543,65 @@
     },
     "f": {
       "0": 3,
-      "1": 14,
-      "2": 27,
-      "3": 27,
-      "4": 6,
+      "1": 6,
+      "2": 12,
+      "3": 12,
+      "4": 3,
       "5": 0,
       "6": 0,
-      "7": 240,
+      "7": 90,
       "8": 3,
       "9": 3,
       "10": 0
     },
     "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [0],
-      "3": [0],
-      "4": [14, 14, 0],
-      "5": [0, 14],
-      "6": [8, 6],
-      "7": [0, 6],
-      "8": [6, 6],
-      "9": [3, 0],
-      "10": [0, 0],
-      "11": [0, 0]
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        3
+      ],
+      "2": [
+        0
+      ],
+      "3": [
+        0
+      ],
+      "4": [
+        6,
+        6,
+        0
+      ],
+      "5": [
+        0,
+        6
+      ],
+      "6": [
+        3,
+        3
+      ],
+      "7": [
+        0,
+        3
+      ],
+      "8": [
+        3,
+        3
+      ],
+      "9": [
+        3,
+        0
+      ],
+      "10": [
+        0,
+        0
+      ],
+      "11": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
@@ -3553,7 +3635,9 @@
         "_c",
         "$RefreshReg$"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/pages/MainPage.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/pages/MainPage.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/pages/MainPage.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -4075,17 +4159,38 @@
       "3": 0
     },
     "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [3, 0],
-      "3": [0, 0],
-      "4": [0, 0]
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        3
+      ],
+      "2": [
+        3,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
       "mappings": "AAGM;AAHN,OAAMA,oBAAkB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACtB,SACE,uBAAC,SACC;AAAA,2BAAC,QAAG,8BAAJ;AAAA;AAAA;AAAA;AAAA,WAAkB;AAAA,IAClB,uBAAC,OAAC,4OAAF;AAAA;AAAA;AAAA;AAAA,WAIA;AAAA,OANF;AAAA;AAAA;AAAA;AAAA,SAOA;AAEJ;AAAEC,KAXID;AAYN,SAASA;AAAY,IAAAC;AAAAC,aAAAD,IAAA",
-      "names": ["AboutPage", "_c", "$RefreshReg$"],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/pages/AboutPage.tsx"],
+      "names": [
+        "AboutPage",
+        "_c",
+        "$RefreshReg$"
+      ],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/pages/AboutPage.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/pages/AboutPage.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -4607,17 +4712,38 @@
       "3": 0
     },
     "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [3, 0],
-      "3": [0, 0],
-      "4": [0, 0]
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        3
+      ],
+      "2": [
+        3,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
       "mappings": "AAGM;AAHN,OAAMA,oBAAiB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACrB,SACE,uBAAC,SACC,iCAAC,QAAG,4BAAJ;AAAA;AAAA;AAAA;AAAA,SAAgB,KADlB;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;AAAEC,KANID;AAON,SAASA;AAAW,IAAAC;AAAAC,aAAAD,IAAA",
-      "names": ["NotFound", "_c", "$RefreshReg$"],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/pages/NotFoundPage.tsx"],
+      "names": [
+        "NotFound",
+        "_c",
+        "$RefreshReg$"
+      ],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/pages/NotFoundPage.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/pages/NotFoundPage.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -5802,23 +5928,74 @@
       "5": 0
     },
     "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [0, 0],
-      "3": [0, 0],
-      "4": [0, 0],
-      "5": [0, 0],
-      "6": [0, 0],
-      "7": [0, 0],
-      "8": [0, 0],
-      "9": [0, 0],
-      "10": [0, 0],
-      "11": [0, 0],
-      "12": [0, 0],
-      "13": [0, 0],
-      "14": [3, 0],
-      "15": [0, 0],
-      "16": [0, 0]
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        3
+      ],
+      "2": [
+        0,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ],
+      "5": [
+        0,
+        0
+      ],
+      "6": [
+        0,
+        0
+      ],
+      "7": [
+        0,
+        0
+      ],
+      "8": [
+        0,
+        0
+      ],
+      "9": [
+        0,
+        0
+      ],
+      "10": [
+        0,
+        0
+      ],
+      "11": [
+        0,
+        0
+      ],
+      "12": [
+        0,
+        0
+      ],
+      "13": [
+        0,
+        0
+      ],
+      "14": [
+        3,
+        0
+      ],
+      "15": [
+        0,
+        0
+      ],
+      "16": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
@@ -5847,7 +6024,9 @@
         "_c",
         "$RefreshReg$"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/components/Form.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/components/Form.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/components/Form.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -6608,17 +6787,50 @@
       "2": 0
     },
     "b": {
-      "0": [0, 0],
-      "1": [0, 0],
-      "2": [0, 0],
-      "3": [0, 0],
-      "4": [0, 0],
-      "5": [0, 0],
-      "6": [0, 0],
-      "7": [0, 0],
-      "8": [0, 0],
-      "9": [0, 0],
-      "10": [0, 0]
+      "0": [
+        0,
+        0
+      ],
+      "1": [
+        0,
+        0
+      ],
+      "2": [
+        0,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ],
+      "5": [
+        0,
+        0
+      ],
+      "6": [
+        0,
+        0
+      ],
+      "7": [
+        0,
+        0
+      ],
+      "8": [
+        0,
+        0
+      ],
+      "9": [
+        0,
+        0
+      ],
+      "10": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
@@ -6648,7 +6860,9 @@
         "result",
         "render"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/components/NewCard.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/components/NewCard.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/components/NewCard.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -6802,7 +7016,9 @@
         "forms",
         "reducer"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/store/features/formsSlice.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/store/features/formsSlice.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/store/features/formsSlice.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -7498,11 +7714,26 @@
       "6": 0
     },
     "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [3, 0],
-      "3": [0, 0],
-      "4": [0, 0]
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        3
+      ],
+      "2": [
+        3,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
@@ -7526,1313 +7757,13 @@
         "_c",
         "$RefreshReg$"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/pages/FormPage.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/pages/FormPage.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/pages/FormPage.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
     "hash": "a94c23e1b8477db79bcbbeee8fced76699f844a3"
-  },
-  "D:/rs_school_react/vite-react-ts/src/pages/SearchResultPage.tsx": {
-    "path": "D:/rs_school_react/vite-react-ts/src/pages/SearchResultPage.tsx",
-    "statementMap": {
-      "0": {
-        "start": {
-          "line": 5,
-          "column": 0
-        },
-        "end": {
-          "line": 15,
-          "column": 1
-        }
-      },
-      "1": {
-        "start": {
-          "line": 6,
-          "column": 2
-        },
-        "end": {
-          "line": 8,
-          "column": 3
-        }
-      },
-      "2": {
-        "start": {
-          "line": 7,
-          "column": 4
-        },
-        "end": {
-          "line": 7,
-          "column": 165
-        }
-      },
-      "3": {
-        "start": {
-          "line": 9,
-          "column": 2
-        },
-        "end": {
-          "line": 9,
-          "column": 39
-        }
-      },
-      "4": {
-        "start": {
-          "line": 10,
-          "column": 2
-        },
-        "end": {
-          "line": 10,
-          "column": 39
-        }
-      },
-      "5": {
-        "start": {
-          "line": 11,
-          "column": 2
-        },
-        "end": {
-          "line": 13,
-          "column": 4
-        }
-      },
-      "6": {
-        "start": {
-          "line": 12,
-          "column": 4
-        },
-        "end": {
-          "line": 12,
-          "column": 107
-        }
-      },
-      "7": {
-        "start": {
-          "line": 14,
-          "column": 2
-        },
-        "end": {
-          "line": 14,
-          "column": 75
-        }
-      },
-      "8": {
-        "start": {
-          "line": 16,
-          "column": 9
-        },
-        "end": {
-          "line": 16,
-          "column": 23
-        }
-      },
-      "9": {
-        "start": {
-          "line": 24,
-          "column": 2
-        },
-        "end": {
-          "line": 24,
-          "column": 7
-        }
-      },
-      "10": {
-        "start": {
-          "line": 25,
-          "column": 19
-        },
-        "end": {
-          "line": 25,
-          "column": 32
-        }
-      },
-      "11": {
-        "start": {
-          "line": 26,
-          "column": 19
-        },
-        "end": {
-          "line": 26,
-          "column": 32
-        }
-      },
-      "12": {
-        "start": {
-          "line": 27,
-          "column": 22
-        },
-        "end": {
-          "line": 27,
-          "column": 58
-        }
-      },
-      "13": {
-        "start": {
-          "line": 28,
-          "column": 16
-        },
-        "end": {
-          "line": 28,
-          "column": 42
-        }
-      },
-      "14": {
-        "start": {
-          "line": 32,
-          "column": 6
-        },
-        "end": {
-          "line": 32,
-          "column": 51
-        }
-      },
-      "15": {
-        "start": {
-          "line": 32,
-          "column": 29
-        },
-        "end": {
-          "line": 32,
-          "column": 50
-        }
-      },
-      "16": {
-        "start": {
-          "line": 36,
-          "column": 6
-        },
-        "end": {
-          "line": 36,
-          "column": 48
-        }
-      },
-      "17": {
-        "start": {
-          "line": 36,
-          "column": 29
-        },
-        "end": {
-          "line": 36,
-          "column": 47
-        }
-      },
-      "18": {
-        "start": {
-          "line": 37,
-          "column": 2
-        },
-        "end": {
-          "line": 39,
-          "column": 17
-        }
-      },
-      "19": {
-        "start": {
-          "line": 38,
-          "column": 4
-        },
-        "end": {
-          "line": 38,
-          "column": 30
-        }
-      },
-      "20": {
-        "start": {
-          "line": 40,
-          "column": 2
-        },
-        "end": {
-          "line": 44,
-          "column": 24
-        }
-      },
-      "21": {
-        "start": {
-          "line": 41,
-          "column": 4
-        },
-        "end": {
-          "line": 43,
-          "column": 5
-        }
-      },
-      "22": {
-        "start": {
-          "line": 42,
-          "column": 6
-        },
-        "end": {
-          "line": 42,
-          "column": 38
-        }
-      },
-      "23": {
-        "start": {
-          "line": 45,
-          "column": 23
-        },
-        "end": {
-          "line": 47,
-          "column": 3
-        }
-      },
-      "24": {
-        "start": {
-          "line": 46,
-          "column": 4
-        },
-        "end": {
-          "line": 46,
-          "column": 37
-        }
-      },
-      "25": {
-        "start": {
-          "line": 48,
-          "column": 2
-        },
-        "end": {
-          "line": 111,
-          "column": 11
-        }
-      },
-      "26": {
-        "start": {
-          "line": 70,
-          "column": 122
-        },
-        "end": {
-          "line": 74,
-          "column": 14
-        }
-      },
-      "27": {
-        "start": {
-          "line": 89,
-          "column": 117
-        },
-        "end": {
-          "line": 93,
-          "column": 14
-        }
-      },
-      "28": {
-        "start": {
-          "line": 113,
-          "column": 0
-        },
-        "end": {
-          "line": 115,
-          "column": 3
-        }
-      },
-      "29": {
-        "start": {
-          "line": 114,
-          "column": 2
-        },
-        "end": {
-          "line": 114,
-          "column": 62
-        }
-      },
-      "30": {
-        "start": {
-          "line": 116,
-          "column": 0
-        },
-        "end": {
-          "line": 116,
-          "column": 22
-        }
-      },
-      "31": {
-        "start": {
-          "line": 119,
-          "column": 0
-        },
-        "end": {
-          "line": 119,
-          "column": 37
-        }
-      },
-      "32": {
-        "start": {
-          "line": 120,
-          "column": 0
-        },
-        "end": {
-          "line": 136,
-          "column": 1
-        }
-      },
-      "33": {
-        "start": {
-          "line": 121,
-          "column": 2
-        },
-        "end": {
-          "line": 121,
-          "column": 39
-        }
-      },
-      "34": {
-        "start": {
-          "line": 122,
-          "column": 2
-        },
-        "end": {
-          "line": 122,
-          "column": 39
-        }
-      },
-      "35": {
-        "start": {
-          "line": 123,
-          "column": 2
-        },
-        "end": {
-          "line": 135,
-          "column": 5
-        }
-      },
-      "36": {
-        "start": {
-          "line": 127,
-          "column": 4
-        },
-        "end": {
-          "line": 127,
-          "column": 133
-        }
-      },
-      "37": {
-        "start": {
-          "line": 128,
-          "column": 4
-        },
-        "end": {
-          "line": 134,
-          "column": 7
-        }
-      },
-      "38": {
-        "start": {
-          "line": 129,
-          "column": 6
-        },
-        "end": {
-          "line": 130,
-          "column": 15
-        }
-      },
-      "39": {
-        "start": {
-          "line": 130,
-          "column": 8
-        },
-        "end": {
-          "line": 130,
-          "column": 15
-        }
-      },
-      "40": {
-        "start": {
-          "line": 131,
-          "column": 32
-        },
-        "end": {
-          "line": 131,
-          "column": 115
-        }
-      },
-      "41": {
-        "start": {
-          "line": 132,
-          "column": 6
-        },
-        "end": {
-          "line": 133,
-          "column": 54
-        }
-      },
-      "42": {
-        "start": {
-          "line": 133,
-          "column": 8
-        },
-        "end": {
-          "line": 133,
-          "column": 54
-        }
-      }
-    },
-    "fnMap": {
-      "0": {
-        "name": "(anonymous_0)",
-        "decl": {
-          "start": {
-            "line": 11,
-            "column": 24
-          },
-          "end": {
-            "line": 11,
-            "column": 25
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 11,
-            "column": 38
-          },
-          "end": {
-            "line": 13,
-            "column": 3
-          }
-        },
-        "line": 11
-      },
-      "1": {
-        "name": "SearchResultPage",
-        "decl": {
-          "start": {
-            "line": 23,
-            "column": 9
-          },
-          "end": {
-            "line": 23,
-            "column": 25
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 23,
-            "column": 28
-          },
-          "end": {
-            "line": 112,
-            "column": 1
-          }
-        },
-        "line": 23
-      },
-      "2": {
-        "name": "(anonymous_2)",
-        "decl": {
-          "start": {
-            "line": 32,
-            "column": 18
-          },
-          "end": {
-            "line": 32,
-            "column": 19
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 32,
-            "column": 29
-          },
-          "end": {
-            "line": 32,
-            "column": 50
-          }
-        },
-        "line": 32
-      },
-      "3": {
-        "name": "(anonymous_3)",
-        "decl": {
-          "start": {
-            "line": 36,
-            "column": 18
-          },
-          "end": {
-            "line": 36,
-            "column": 19
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 36,
-            "column": 29
-          },
-          "end": {
-            "line": 36,
-            "column": 47
-          }
-        },
-        "line": 36
-      },
-      "4": {
-        "name": "(anonymous_4)",
-        "decl": {
-          "start": {
-            "line": 37,
-            "column": 12
-          },
-          "end": {
-            "line": 37,
-            "column": 13
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 37,
-            "column": 18
-          },
-          "end": {
-            "line": 39,
-            "column": 3
-          }
-        },
-        "line": 37
-      },
-      "5": {
-        "name": "(anonymous_5)",
-        "decl": {
-          "start": {
-            "line": 40,
-            "column": 12
-          },
-          "end": {
-            "line": 40,
-            "column": 13
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 40,
-            "column": 18
-          },
-          "end": {
-            "line": 44,
-            "column": 3
-          }
-        },
-        "line": 40
-      },
-      "6": {
-        "name": "(anonymous_6)",
-        "decl": {
-          "start": {
-            "line": 45,
-            "column": 23
-          },
-          "end": {
-            "line": 45,
-            "column": 24
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 45,
-            "column": 35
-          },
-          "end": {
-            "line": 47,
-            "column": 3
-          }
-        },
-        "line": 45
-      },
-      "7": {
-        "name": "(anonymous_7)",
-        "decl": {
-          "start": {
-            "line": 70,
-            "column": 86
-          },
-          "end": {
-            "line": 70,
-            "column": 87
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 70,
-            "column": 122
-          },
-          "end": {
-            "line": 74,
-            "column": 14
-          }
-        },
-        "line": 70
-      },
-      "8": {
-        "name": "(anonymous_8)",
-        "decl": {
-          "start": {
-            "line": 89,
-            "column": 81
-          },
-          "end": {
-            "line": 89,
-            "column": 82
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 89,
-            "column": 117
-          },
-          "end": {
-            "line": 93,
-            "column": 14
-          }
-        },
-        "line": 89
-      },
-      "9": {
-        "name": "(anonymous_9)",
-        "decl": {
-          "start": {
-            "line": 113,
-            "column": 60
-          },
-          "end": {
-            "line": 113,
-            "column": 61
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 113,
-            "column": 71
-          },
-          "end": {
-            "line": 115,
-            "column": 1
-          }
-        },
-        "line": 113
-      },
-      "10": {
-        "name": "(anonymous_10)",
-        "decl": {
-          "start": {
-            "line": 126,
-            "column": 9
-          },
-          "end": {
-            "line": 126,
-            "column": 10
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 126,
-            "column": 29
-          },
-          "end": {
-            "line": 135,
-            "column": 3
-          }
-        },
-        "line": 126
-      },
-      "11": {
-        "name": "(anonymous_11)",
-        "decl": {
-          "start": {
-            "line": 128,
-            "column": 27
-          },
-          "end": {
-            "line": 128,
-            "column": 28
-          }
-        },
-        "loc": {
-          "start": {
-            "line": 128,
-            "column": 44
-          },
-          "end": {
-            "line": 134,
-            "column": 5
-          }
-        },
-        "line": 128
-      }
-    },
-    "branchMap": {
-      "0": {
-        "loc": {
-          "start": {
-            "line": 5,
-            "column": 0
-          },
-          "end": {
-            "line": 15,
-            "column": 1
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 5,
-              "column": 0
-            },
-            "end": {
-              "line": 15,
-              "column": 1
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 5
-      },
-      "1": {
-        "loc": {
-          "start": {
-            "line": 6,
-            "column": 2
-          },
-          "end": {
-            "line": 8,
-            "column": 3
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 6,
-              "column": 2
-            },
-            "end": {
-              "line": 8,
-              "column": 3
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 6
-      },
-      "2": {
-        "loc": {
-          "start": {
-            "line": 28,
-            "column": 16
-          },
-          "end": {
-            "line": 28,
-            "column": 42
-          }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 28,
-              "column": 16
-            },
-            "end": {
-              "line": 28,
-              "column": 36
-            }
-          },
-          {
-            "start": {
-              "line": 28,
-              "column": 40
-            },
-            "end": {
-              "line": 28,
-              "column": 42
-            }
-          }
-        ],
-        "line": 28
-      },
-      "3": {
-        "loc": {
-          "start": {
-            "line": 30,
-            "column": 10
-          },
-          "end": {
-            "line": 30,
-            "column": 28
-          }
-        },
-        "type": "default-arg",
-        "locations": [
-          {
-            "start": {
-              "line": 30,
-              "column": 26
-            },
-            "end": {
-              "line": 30,
-              "column": 28
-            }
-          }
-        ],
-        "line": 30
-      },
-      "4": {
-        "loc": {
-          "start": {
-            "line": 34,
-            "column": 10
-          },
-          "end": {
-            "line": 34,
-            "column": 23
-          }
-        },
-        "type": "default-arg",
-        "locations": [
-          {
-            "start": {
-              "line": 34,
-              "column": 21
-            },
-            "end": {
-              "line": 34,
-              "column": 23
-            }
-          }
-        ],
-        "line": 34
-      },
-      "5": {
-        "loc": {
-          "start": {
-            "line": 41,
-            "column": 4
-          },
-          "end": {
-            "line": 43,
-            "column": 5
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 41,
-              "column": 4
-            },
-            "end": {
-              "line": 43,
-              "column": 5
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 41
-      },
-      "6": {
-        "loc": {
-          "start": {
-            "line": 59,
-            "column": 4
-          },
-          "end": {
-            "line": 63,
-            "column": 12
-          }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 59,
-              "column": 5
-            },
-            "end": {
-              "line": 59,
-              "column": 16
-            }
-          },
-          {
-            "start": {
-              "line": 59,
-              "column": 20
-            },
-            "end": {
-              "line": 59,
-              "column": 30
-            }
-          },
-          {
-            "start": {
-              "line": 59,
-              "column": 51
-            },
-            "end": {
-              "line": 63,
-              "column": 12
-            }
-          }
-        ],
-        "line": 59
-      },
-      "7": {
-        "loc": {
-          "start": {
-            "line": 64,
-            "column": 4
-          },
-          "end": {
-            "line": 106,
-            "column": 12
-          }
-        },
-        "type": "cond-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 64,
-              "column": 47
-            },
-            "end": {
-              "line": 83,
-              "column": 12
-            }
-          },
-          {
-            "start": {
-              "line": 83,
-              "column": 15
-            },
-            "end": {
-              "line": 106,
-              "column": 12
-            }
-          }
-        ],
-        "line": 64
-      },
-      "8": {
-        "loc": {
-          "start": {
-            "line": 83,
-            "column": 15
-          },
-          "end": {
-            "line": 106,
-            "column": 12
-          }
-        },
-        "type": "cond-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 83,
-              "column": 53
-            },
-            "end": {
-              "line": 102,
-              "column": 12
-            }
-          },
-          {
-            "start": {
-              "line": 102,
-              "column": 31
-            },
-            "end": {
-              "line": 106,
-              "column": 12
-            }
-          }
-        ],
-        "line": 83
-      },
-      "9": {
-        "loc": {
-          "start": {
-            "line": 102,
-            "column": 55
-          },
-          "end": {
-            "line": 102,
-            "column": 116
-          }
-        },
-        "type": "cond-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 102,
-              "column": 83
-            },
-            "end": {
-              "line": 102,
-              "column": 95
-            }
-          },
-          {
-            "start": {
-              "line": 102,
-              "column": 98
-            },
-            "end": {
-              "line": 102,
-              "column": 116
-            }
-          }
-        ],
-        "line": 102
-      },
-      "10": {
-        "loc": {
-          "start": {
-            "line": 102,
-            "column": 55
-          },
-          "end": {
-            "line": 102,
-            "column": 80
-          }
-        },
-        "type": "binary-expr",
-        "locations": [
-          {
-            "start": {
-              "line": 102,
-              "column": 55
-            },
-            "end": {
-              "line": 102,
-              "column": 66
-            }
-          },
-          {
-            "start": {
-              "line": 102,
-              "column": 70
-            },
-            "end": {
-              "line": 102,
-              "column": 80
-            }
-          }
-        ],
-        "line": 102
-      },
-      "11": {
-        "loc": {
-          "start": {
-            "line": 120,
-            "column": 0
-          },
-          "end": {
-            "line": 136,
-            "column": 1
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 120,
-              "column": 0
-            },
-            "end": {
-              "line": 136,
-              "column": 1
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 120
-      },
-      "12": {
-        "loc": {
-          "start": {
-            "line": 129,
-            "column": 6
-          },
-          "end": {
-            "line": 130,
-            "column": 15
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 129,
-              "column": 6
-            },
-            "end": {
-              "line": 130,
-              "column": 15
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 129
-      },
-      "13": {
-        "loc": {
-          "start": {
-            "line": 132,
-            "column": 6
-          },
-          "end": {
-            "line": 133,
-            "column": 54
-          }
-        },
-        "type": "if",
-        "locations": [
-          {
-            "start": {
-              "line": 132,
-              "column": 6
-            },
-            "end": {
-              "line": 133,
-              "column": 54
-            }
-          },
-          {
-            "start": {},
-            "end": {}
-          }
-        ],
-        "line": 132
-      }
-    },
-    "s": {
-      "0": 3,
-      "1": 3,
-      "2": 0,
-      "3": 3,
-      "4": 3,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 3,
-      "29": 0,
-      "30": 3,
-      "31": 3,
-      "32": 3,
-      "33": 3,
-      "34": 3,
-      "35": 3,
-      "36": 3,
-      "37": 3,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0
-    },
-    "f": {
-      "0": 3,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 3,
-      "11": 0
-    },
-    "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [0, 0],
-      "3": [0],
-      "4": [0],
-      "5": [0, 0],
-      "6": [0, 0, 0],
-      "7": [0, 0],
-      "8": [0, 0],
-      "9": [0, 0],
-      "10": [0, 0],
-      "11": [3, 0],
-      "12": [0, 0],
-      "13": [0, 0]
-    },
-    "inputSourceMap": {
-      "version": 3,
-      "mappings": "AAuCM;;;;;;;;;;;;;;;;AAvCN,SAASA,iBAAiB;AAC1B,SAASC,mBAAmB;AAC5B,SAASC,aAAaC,mBAAmB;AAIzC,SAASC,eAAeC,sBAAsB;AAC9C,OAAOC,eAAe;AACtB,SAASC,YAAY;AAErB,SAASC,mBAAmB;AAAAC,KAAA;AAC1B,QAAMC,WAAsDP,YAAW;AACvE,QAAMQ,WAAWV,YAAW;AAC5B,QAAMW,cAAc,IAAIC,gBAAgBF,SAASG,MAAM;AACvD,QAAMC,QAAQH,YAAYI,IAAI,GAAG,KAAK;AAEtC,QAAM;AAAA,IAAEC,MAAMC,gBAAgB;AAAA,IAAIC,WAAWC;AAAAA,EAAY,IAAIlB,YAC3D,CAACmB,UAAqBA,MAAMC,SAASR,MAAM;AAE7C,QAAM;AAAA,IAAEG,MAAMK,WAAW;AAAA,IAAIH,WAAWI;AAAAA,EAAW,IAAIrB,YACrD,CAACmB,UAAqBA,MAAMC,SAASE,GAAG;AAG1CxB,YAAU,MAAM;AACdU,aAASN,cAAa,CAAE;AAAA,EAC1B,GAAG,CAACM,QAAQ,CAAC;AAEbV,YAAU,MAAM;AACd,QAAIe,OAAO;AACTL,eAASL,eAAeU,KAAK,CAAC;AAAA,IAChC;AAAA,EACF,GAAG,CAACL,UAAUK,KAAK,CAAC;AAEpB,QAAMU,eAAeA,CAACV,WAAkB;AACtCL,aAASL,eAAeU,MAAK,CAAC;AAAA,EAChC;AAEA,SACE,uBAAC,SACC;AAAA,2BAAC,QAAG,2BAAJ;AAAA;AAAA;AAAA;AAAA,WAAe;AAAA,IACf,uBAAC,aAAU,UAAUU,gBAArB;AAAA;AAAA;AAAA;AAAA,WAAkC;AAAA,KAChCL,eAAeG,eAAe,uBAAC,SAAI,WAAU,WAAU,0BAAzB;AAAA;AAAA;AAAA;AAAA,WAAmC;AAAA,IAClEL,cAAcQ,SAAS,IACtB,uBAAC,SACC;AAAA,6BAAC,QAAG,8BAAJ;AAAA;AAAA;AAAA;AAAA,aAAkB;AAAA,MAClB,uBAAC,SAAI,WAAU,SACZR,wBAAcS,IAAI,CAACC,SAASC,UAC3B,uBAAC,QAAiB,WAAPA,OAAX;AAAA;AAAA;AAAA;AAAA,aAAmC,CACpC,KAHH;AAAA;AAAA;AAAA;AAAA,aAIA;AAAA,SANF;AAAA;AAAA;AAAA;AAAA,WAOA,IACEP,SAASI,SAAS,IACpB,uBAAC,SACC;AAAA,6BAAC,QAAG,4BAAJ;AAAA;AAAA;AAAA;AAAA,aAAgB;AAAA,MAChB,uBAAC,SAAI,WAAU,SACZJ,mBAASK,IAAI,CAACC,SAASC,UACtB,uBAAC,QAAiB,WAAPA,OAAX;AAAA;AAAA;AAAA;AAAA,aAAmC,CACpC,KAHH;AAAA;AAAA;AAAA;AAAA,aAIA;AAAA,SANF;AAAA;AAAA;AAAA;AAAA,WAOA,IAEA,uBAAC,OAAGT,yBAAeG,aAAa,eAAe,sBAA/C;AAAA;AAAA;AAAA;AAAA,WAAkE;AAAA,OAvBtE;AAAA;AAAA;AAAA;AAAA,SAyBA;AAEJ;AAACd,GAvDQD,kBAAgB;AAAA,UACqCL,aAC3CF,aAI4CC,aAGNA,WAAW;AAAA;AAAA4B,KAT3DtB;AAyDT,SAASA;AAAmB,IAAAsB;AAAAC,aAAAD,IAAA",
-      "names": [
-        "useEffect",
-        "useLocation",
-        "useSelector",
-        "useDispatch",
-        "fetchProducts",
-        "searchProducts",
-        "SearchBar",
-        "Card",
-        "SearchResultPage",
-        "_s",
-        "dispatch",
-        "location",
-        "queryParams",
-        "URLSearchParams",
-        "search",
-        "query",
-        "get",
-        "data",
-        "searchResults",
-        "isLoading",
-        "isSearching",
-        "state",
-        "products",
-        "isFetching",
-        "all",
-        "handleSearch",
-        "length",
-        "map",
-        "product",
-        "index",
-        "_c",
-        "$RefreshReg$"
-      ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/pages/SearchResultPage.tsx"],
-      "file": "D:/rs_school_react/vite-react-ts/src/pages/SearchResultPage.tsx"
-    },
-    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "aed35502c4f3b9f168d2140fcad28b47a9a15f39"
   },
   "D:/rs_school_react/vite-react-ts/src/App.tsx": {
     "path": "D:/rs_school_react/vite-react-ts/src/App.tsx",
@@ -8919,141 +7850,141 @@
       },
       "8": {
         "start": {
-          "line": 25,
+          "line": 24,
           "column": 2
         },
         "end": {
-          "line": 102,
+          "line": 92,
           "column": 11
         }
       },
       "9": {
         "start": {
-          "line": 104,
+          "line": 94,
           "column": 0
         },
         "end": {
-          "line": 104,
+          "line": 94,
           "column": 9
         }
       },
       "10": {
         "start": {
-          "line": 107,
+          "line": 97,
           "column": 0
         },
         "end": {
-          "line": 107,
+          "line": 97,
           "column": 24
         }
       },
       "11": {
         "start": {
-          "line": 108,
+          "line": 98,
           "column": 0
         },
         "end": {
-          "line": 124,
+          "line": 114,
           "column": 1
         }
       },
       "12": {
         "start": {
-          "line": 109,
+          "line": 99,
           "column": 2
         },
         "end": {
-          "line": 109,
+          "line": 99,
           "column": 39
         }
       },
       "13": {
         "start": {
-          "line": 110,
+          "line": 100,
           "column": 2
         },
         "end": {
-          "line": 110,
+          "line": 100,
           "column": 39
         }
       },
       "14": {
         "start": {
-          "line": 111,
+          "line": 101,
           "column": 2
         },
         "end": {
-          "line": 123,
+          "line": 113,
           "column": 5
         }
       },
       "15": {
         "start": {
-          "line": 115,
+          "line": 105,
           "column": 4
         },
         "end": {
-          "line": 115,
+          "line": 105,
           "column": 114
         }
       },
       "16": {
         "start": {
-          "line": 116,
+          "line": 106,
           "column": 4
         },
         "end": {
-          "line": 122,
+          "line": 112,
           "column": 7
         }
       },
       "17": {
         "start": {
-          "line": 117,
+          "line": 107,
           "column": 6
         },
         "end": {
-          "line": 118,
+          "line": 108,
           "column": 15
         }
       },
       "18": {
         "start": {
-          "line": 118,
+          "line": 108,
           "column": 8
         },
         "end": {
-          "line": 118,
+          "line": 108,
           "column": 15
         }
       },
       "19": {
         "start": {
-          "line": 119,
+          "line": 109,
           "column": 32
         },
         "end": {
-          "line": 119,
+          "line": 109,
           "column": 115
         }
       },
       "20": {
         "start": {
-          "line": 120,
+          "line": 110,
           "column": 6
         },
         "end": {
-          "line": 121,
+          "line": 111,
           "column": 54
         }
       },
       "21": {
         "start": {
-          "line": 121,
+          "line": 111,
           "column": 8
         },
         "end": {
-          "line": 121,
+          "line": 111,
           "column": 54
         }
       }
@@ -9087,73 +8018,73 @@
         "name": "App",
         "decl": {
           "start": {
-            "line": 24,
+            "line": 23,
             "column": 9
           },
           "end": {
-            "line": 24,
+            "line": 23,
             "column": 12
           }
         },
         "loc": {
           "start": {
-            "line": 24,
+            "line": 23,
             "column": 15
           },
           "end": {
-            "line": 103,
+            "line": 93,
             "column": 1
           }
         },
-        "line": 24
+        "line": 23
       },
       "2": {
         "name": "(anonymous_2)",
         "decl": {
           "start": {
-            "line": 114,
+            "line": 104,
             "column": 9
           },
           "end": {
-            "line": 114,
+            "line": 104,
             "column": 10
           }
         },
         "loc": {
           "start": {
-            "line": 114,
+            "line": 104,
             "column": 29
           },
           "end": {
-            "line": 123,
+            "line": 113,
             "column": 3
           }
         },
-        "line": 114
+        "line": 104
       },
       "3": {
         "name": "(anonymous_3)",
         "decl": {
           "start": {
-            "line": 116,
+            "line": 106,
             "column": 27
           },
           "end": {
-            "line": 116,
+            "line": 106,
             "column": 28
           }
         },
         "loc": {
           "start": {
-            "line": 116,
+            "line": 106,
             "column": 44
           },
           "end": {
-            "line": 122,
+            "line": 112,
             "column": 5
           }
         },
-        "line": 116
+        "line": 106
       }
     },
     "branchMap": {
@@ -9220,11 +8151,11 @@
       "2": {
         "loc": {
           "start": {
-            "line": 108,
+            "line": 98,
             "column": 0
           },
           "end": {
-            "line": 124,
+            "line": 114,
             "column": 1
           }
         },
@@ -9232,11 +8163,11 @@
         "locations": [
           {
             "start": {
-              "line": 108,
+              "line": 98,
               "column": 0
             },
             "end": {
-              "line": 124,
+              "line": 114,
               "column": 1
             }
           },
@@ -9245,16 +8176,16 @@
             "end": {}
           }
         ],
-        "line": 108
+        "line": 98
       },
       "3": {
         "loc": {
           "start": {
-            "line": 117,
+            "line": 107,
             "column": 6
           },
           "end": {
-            "line": 118,
+            "line": 108,
             "column": 15
           }
         },
@@ -9262,11 +8193,11 @@
         "locations": [
           {
             "start": {
-              "line": 117,
+              "line": 107,
               "column": 6
             },
             "end": {
-              "line": 118,
+              "line": 108,
               "column": 15
             }
           },
@@ -9275,16 +8206,16 @@
             "end": {}
           }
         ],
-        "line": 117
+        "line": 107
       },
       "4": {
         "loc": {
           "start": {
-            "line": 120,
+            "line": 110,
             "column": 6
           },
           "end": {
-            "line": 121,
+            "line": 111,
             "column": 54
           }
         },
@@ -9292,11 +8223,11 @@
         "locations": [
           {
             "start": {
-              "line": 120,
+              "line": 110,
               "column": 6
             },
             "end": {
-              "line": 121,
+              "line": 111,
               "column": 54
             }
           },
@@ -9305,7 +8236,7 @@
             "end": {}
           }
         ],
-        "line": 120
+        "line": 110
       }
     },
     "s": {
@@ -9317,7 +8248,7 @@
       "5": 3,
       "6": 3,
       "7": 3,
-      "8": 6,
+      "8": 3,
       "9": 3,
       "10": 3,
       "11": 3,
@@ -9334,20 +8265,35 @@
     },
     "f": {
       "0": 3,
-      "1": 6,
+      "1": 3,
       "2": 3,
       "3": 0
     },
     "b": {
-      "0": [3, 0],
-      "1": [0, 3],
-      "2": [3, 0],
-      "3": [0, 0],
-      "4": [0, 0]
+      "0": [
+        3,
+        0
+      ],
+      "1": [
+        0,
+        3
+      ],
+      "2": [
+        3,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ]
     },
     "inputSourceMap": {
       "version": 3,
-      "mappings": "AAWI,mBAEI,cAFJ;AAXJ,OAAO,oBAAW;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAClB,SAASA,QAAQC,aAAa;AAC9B,SAASC,eAAe;AACxB,SAASC,gBAAgB;AACzB,SAASC,iBAAiB;AAC1B,SAASC,gBAAgB;AACzB,SAASC,iBAAiB;AAC1B,SAASC,wBAAwB;AAEjC,SAASC,MAAM;AACb,SACE,mCACE;AAAA,2BAAC,YACC;AAAA,6BAAC,WAAQ,IAAG,KAAI,oBAAhB;AAAA;AAAA;AAAA;AAAA,aAAoB;AAAA,MACpB,uBAAC,WAAQ,IAAG,UAAS,qBAArB;AAAA;AAAA;AAAA;AAAA,aAA0B;AAAA,MAC1B,uBAAC,WAAQ,IAAG,UAAS,qBAArB;AAAA;AAAA;AAAA;AAAA,aAA0B;AAAA,SAH5B;AAAA;AAAA;AAAA;AAAA,WAIA;AAAA,IACA,uBAAC,UACC;AAAA,6BAAC,SAAM,MAAK,KAAI,SAAS,uBAAC,cAAD;AAAA;AAAA;AAAA;AAAA,aAAS,KAAlC;AAAA;AAAA;AAAA;AAAA,aAAsC;AAAA,MACtC,uBAAC,SAAM,MAAK,UAAS,SAAS,uBAAC,eAAD;AAAA;AAAA;AAAA;AAAA,aAAU,KAAxC;AAAA;AAAA;AAAA;AAAA,aAA4C;AAAA,MAC5C,uBAAC,SAAM,MAAK,UAAS,SAAS,uBAAC,eAAD;AAAA;AAAA;AAAA;AAAA,aAAU,KAAxC;AAAA;AAAA;AAAA;AAAA,aAA4C;AAAA,MAC5C,uBAAC,SAAM,MAAK,WAAU,SAAS,uBAAC,sBAAD;AAAA;AAAA;AAAA;AAAA,aAAiB,KAAhD;AAAA;AAAA;AAAA;AAAA,aAAoD;AAAA,MACpD,uBAAC,SAAM,MAAK,KAAI,SAAS,uBAAC,cAAD;AAAA;AAAA;AAAA;AAAA,aAAS,KAAlC;AAAA;AAAA;AAAA;AAAA,aAAsC;AAAA,SALxC;AAAA;AAAA;AAAA;AAAA,WAMA;AAAA,OAZF;AAAA;AAAA;AAAA;AAAA,SAaA;AAEJ;AAACC,KAjBQD;AAmBT,eAAeA;AAAI,IAAAC;AAAAC,aAAAD,IAAA",
+      "mappings": "AAUI,mBAEI,cAFJ;AAVJ,OAAO,oBAAW;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAClB,SAASA,QAAQC,aAAa;AAC9B,SAASC,eAAe;AACxB,SAASC,gBAAgB;AACzB,SAASC,iBAAiB;AAC1B,SAASC,gBAAgB;AACzB,SAASC,iBAAiB;AAE1B,SAASC,MAAM;AACb,SACE,mCACE;AAAA,2BAAC,YACC;AAAA,6BAAC,WAAQ,IAAG,KAAI,oBAAhB;AAAA;AAAA;AAAA;AAAA,aAAoB;AAAA,MACpB,uBAAC,WAAQ,IAAG,UAAS,qBAArB;AAAA;AAAA;AAAA;AAAA,aAA0B;AAAA,MAC1B,uBAAC,WAAQ,IAAG,UAAS,qBAArB;AAAA;AAAA;AAAA;AAAA,aAA0B;AAAA,SAH5B;AAAA;AAAA;AAAA;AAAA,WAIA;AAAA,IACA,uBAAC,UACC;AAAA,6BAAC,SAAM,MAAK,KAAI,SAAS,uBAAC,cAAD;AAAA;AAAA;AAAA;AAAA,aAAS,KAAlC;AAAA;AAAA;AAAA;AAAA,aAAsC;AAAA,MACtC,uBAAC,SAAM,MAAK,UAAS,SAAS,uBAAC,eAAD;AAAA;AAAA;AAAA;AAAA,aAAU,KAAxC;AAAA;AAAA;AAAA;AAAA,aAA4C;AAAA,MAC5C,uBAAC,SAAM,MAAK,UAAS,SAAS,uBAAC,eAAD;AAAA;AAAA;AAAA;AAAA,aAAU,KAAxC;AAAA;AAAA;AAAA;AAAA,aAA4C;AAAA,MAC5C,uBAAC,SAAM,MAAK,KAAI,SAAS,uBAAC,cAAD;AAAA;AAAA;AAAA;AAAA,aAAS,KAAlC;AAAA;AAAA;AAAA;AAAA,aAAsC;AAAA,SAJxC;AAAA;AAAA;AAAA;AAAA,WAKA;AAAA,OAXF;AAAA;AAAA;AAAA;AAAA,SAYA;AAEJ;AAACC,KAhBQD;AAkBT,eAAeA;AAAI,IAAAC;AAAAC,aAAAD,IAAA",
       "names": [
         "Routes",
         "Route",
@@ -9356,16 +8302,17 @@
         "AboutPage",
         "NotFound",
         "FormsPage",
-        "SearchResultPage",
         "App",
         "_c",
         "$RefreshReg$"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/App.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/App.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/App.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "5d6112e34973d677fc780afb3696eefdee489644"
+    "hash": "dd0801890d3e64cbefe9e554a9df2911495e2119"
   },
   "D:/rs_school_react/vite-react-ts/src/store/store.tsx": {
     "path": "D:/rs_school_react/vite-react-ts/src/store/store.tsx",
@@ -9402,7 +8349,9 @@
         "search",
         "forms"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/store/store.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/store/store.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/store/store.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
@@ -9444,7 +8393,9 @@
         "getElementById",
         "render"
       ],
-      "sources": ["D:/rs_school_react/vite-react-ts/src/main.tsx"],
+      "sources": [
+        "D:/rs_school_react/vite-react-ts/src/main.tsx"
+      ],
       "file": "D:/rs_school_react/vite-react-ts/src/main.tsx"
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",

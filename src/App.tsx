@@ -5,7 +5,6 @@ import { MainPage } from './pages/MainPage';
 import { AboutPage } from './pages/AboutPage';
 import { NotFound } from './pages/NotFoundPage';
 import { FormsPage } from './pages/FormPage';
-import { SearchResultPage } from './pages/SearchResultPage';
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/forms" element={<FormsPage />} />
-        <Route path="/search" element={<SearchResultPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
