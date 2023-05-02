@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    // "target": "ESNext",
+    "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["cypress"]
+    "types": ["cypress", "node", "jest", "@testing-library/jest-dom"]
   },
   "ts-node": {
     "esm": true,
@@ -24,10 +24,12 @@
   "include": [
     "src",
     "jest.config.js",
-    "server/index.ts",
+    "server.ts",
     "**/*.ts",
-    "cypress.config.js",
-    "cypress,config.js"
+    "cypress.config.ts",
+    "cypress/e2e/MainPage.cy.ts",
+    "cypress/e2e/Card.cy.ts"
   ],
+  "exclude": ["cypress.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

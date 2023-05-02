@@ -3,6 +3,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import copy from 'rollup-plugin-copy';
+import istanbul from 'vite-plugin-istanbul';
 
 export default defineConfig({
   plugins: [
@@ -10,6 +11,10 @@ export default defineConfig({
       targets: [{ src: 'assets/*', dest: 'dist/public' }],
     }),
     react(),
+    istanbul({
+      cypress: true,
+      requireEnv: false,
+    }),
   ],
 
   server: {
@@ -26,5 +31,18 @@ export default defineConfig({
   esbuild: {
     jsxFactory: 'h',
     jsxFragment: 'Fragment',
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    css: true,
+    coverage: {
+      include: ['src/**/*'],
+      exclude: ['**/*/@(index|config).@(tsx|ts)', '**/*/*.@(icon|asset|d|test).@(tsx|ts)'],
+      enabled: true,
+      provider: 'c8',
+      reporter: ['text'],
+      all: true,
+    },
   },
 });

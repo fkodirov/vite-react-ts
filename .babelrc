@@ -1,4 +1,9 @@
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"],
-  "plugins": ["@babel/plugin-syntax-jsx", "istanbul"]
+  "plugins": ["@babel/plugin-syntax-jsx", "istanbul"],
+  "env": {
+    "test": {
+      "plugins": ["istanbul"]
+    }
+  }
 }

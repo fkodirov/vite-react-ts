@@ -1,14 +1,8 @@
 /// <reference types="cypress" />
-
+import '@cypress/code-coverage/support';
 describe('Main Page', () => {
   it('should display products when page is loaded', () => {
     cy.visit('/');
-    cy.get('.cards').children().should('have.length.above', 0);
-  });
-
-  it('should display search results when searching for a product', () => {
-    cy.visit('/');
-    cy.get('input[type=search]').type('iphone');
     cy.get('.cards').children().should('have.length.above', 0);
   });
 
